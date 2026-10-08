@@ -1,0 +1,1910 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mơ Store | Mỗi Bộ Đồ Là Một Câu Chuyện - Thời Trang Thiết Kế Nữ Cao Cấp</title>
+  <meta name="description" content="Mơ Store - Thời trang nữ thiết kế cao cấp: Váy đầm dạ tiệc, áo kiểu tiểu thư, quần suông hack dáng. Nền hồng dịu dàng, sắc đỏ đô quyến rũ. Hotline: 0369670374.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            // Nền hồng dịu dàng, thanh khiết
+            pastel: {
+              50: '#FFF7F9',
+              100: '#FDEEF2',
+              200: '#FCD7E2',
+              300: '#F8B4C8',
+              400: '#F187A6',
+              500: '#E25B83',
+            },
+            // Đỏ đô quyến rũ, quyền lực, thanh lịch
+            burgundy: {
+              500: '#9B1135',
+              600: '#850D2C',
+              700: '#700924',
+              800: '#5A051C',
+              900: '#410212',
+            },
+            gold: {
+              400: '#E8C177',
+              500: '#D4AF37',
+              600: '#B89025',
+            },
+            charcoal: {
+              800: '#261C1E',
+              900: '#1A1214',
+            }
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          boxShadow: {
+            'burgundy-glow': '0 10px 25px -5px rgba(112, 9, 36, 0.45), 0 8px 10px -6px rgba(112, 9, 36, 0.3)',
+            'pink-soft': '0 15px 35px -10px rgba(226, 91, 131, 0.18)',
+            'toast': '0 20px 40px -15px rgba(112, 9, 36, 0.25), 0 0 1px 1px rgba(112, 9, 36, 0.15)',
+          },
+          keyframes: {
+            pulseSlow: {
+              '0%, 100%': { transform: 'scale(1)', opacity: '1' },
+              '50%': { transform: 'scale(1.03)', opacity: '0.92' },
+            },
+            float: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-8px)' },
+            }
+          },
+          animation: {
+            'pulse-slow': 'pulseSlow 2.5s ease-in-out infinite',
+            'float': 'float 4s ease-in-out infinite',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #FFF7F9;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #850D2C;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #5A051C;
+    }
+    .text-shadow-sm {
+      text-shadow: 0 1px 3px rgba(0,0,0,0.25);
+    }
+    .text-shadow-md {
+      text-shadow: 0 2px 6px rgba(0,0,0,0.35);
+    }
+
+    /* === STYLES DÀNH CHO CHẾ ĐỘ CHỈNH SỬA TRỰC TIẾP (EDIT MODE) === */
+    body.is-edit-mode [contenteditable="true"] {
+      outline: 2px dashed #850D2C !important;
+      outline-offset: 3px;
+      cursor: text !important;
+      background-color: rgba(253, 238, 242, 0.6) !important;
+      border-radius: 4px;
+      transition: background-color 0.2s, outline 0.2s;
+    }
+    body.is-edit-mode [contenteditable="true"]:hover {
+      background-color: rgba(248, 180, 200, 0.5) !important;
+      outline-color: #5A051C !important;
+    }
+    body.is-edit-mode [contenteditable="true"]:focus {
+      background-color: #ffffff !important;
+      outline: 2px solid #D4AF37 !important;
+      box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+    }
+    body.is-edit-mode img.editable-img {
+      outline: 3px dashed #D4AF37 !important;
+      cursor: pointer !important;
+      filter: brightness(0.95);
+      position: relative;
+    }
+    body.is-edit-mode img.editable-img:hover {
+      filter: brightness(1.05);
+      outline-color: #850D2C !important;
+    }
+  </style>
+</head>
+<body class="bg-pastel-50 text-charcoal-800 font-sans antialiased selection:bg-burgundy-700 selection:text-white pb-14 sm:pb-0">
+
+  <!-- ========================================================================= -->
+  <!-- BẢNG ĐIỀU KHIỂN CHỈNH SỬA TRỰC TIẾP (ADMIN LIVE EDIT BAR)                  -->
+  <!-- ========================================================================= -->
+  <div id="admin-toolbar" class="sticky top-0 z-50 bg-charcoal-900/95 backdrop-blur-md text-white border-b-2 border-gold-500 py-2.5 px-4 shadow-xl transition-all">
+    <div class="container mx-auto flex flex-wrap items-center justify-between gap-3 text-xs">
+      
+      <!-- Status Badge -->
+      <div class="flex items-center space-x-2">
+        <span class="w-3 h-3 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span class="font-bold tracking-wide text-pastel-100 flex items-center space-x-1.5">
+          <i class="fa-solid fa-pen-to-square text-gold-400"></i>
+          <span>QUẢN TRỊ TRANG MƠ STORE:</span>
+        </span>
+        <span id="edit-mode-status" class="bg-burgundy-800 text-gold-400 font-bold px-2 py-0.5 rounded text-[11px]">
+          Xem Trước (Khách)
+        </span>
+      </div>
+
+      <!-- Action Tools -->
+      <div class="flex flex-wrap items-center gap-2">
+        <!-- Button Toggle Edit Mode -->
+        <button id="toggle-edit-btn" onclick="toggleEditMode()" class="bg-burgundy-700 hover:bg-burgundy-600 text-white font-bold px-3 py-1.5 rounded-lg shadow flex items-center space-x-1.5 transition">
+          <i class="fa-solid fa-pen"></i>
+          <span id="toggle-btn-text">Bật Chỉnh Sửa Trực Tiếp</span>
+        </button>
+
+        <!-- Button Open Quick Settings Drawer -->
+        <button onclick="openSettingsModal()" class="bg-charcoal-800 hover:bg-charcoal-700 text-gold-400 border border-gold-500/40 font-bold px-3 py-1.5 rounded-lg flex items-center space-x-1.5 transition">
+          <i class="fa-solid fa-sliders"></i>
+          <span>Bảng Sửa Nhanh (Hotline, Toast 30s, Giá)</span>
+        </button>
+
+        <!-- Button Save to LocalStorage -->
+        <button onclick="saveChanges()" class="bg-emerald-700 hover:bg-emerald-600 text-white font-bold px-3 py-1.5 rounded-lg flex items-center space-x-1.5 shadow transition">
+          <i class="fa-solid fa-floppy-disk"></i>
+          <span>Lưu Trang</span>
+        </button>
+
+        <!-- Button Export / Download HTML File -->
+        <button onclick="exportCleanHTML()" class="bg-gold-500 hover:bg-gold-400 text-charcoal-900 font-black px-3.5 py-1.5 rounded-lg flex items-center space-x-1.5 shadow transition">
+          <i class="fa-solid fa-file-arrow-down"></i>
+          <span>Tải File index.html Về Máy</span>
+        </button>
+
+        <!-- Button Reset Default -->
+        <button onclick="resetDefaultTemplate()" class="bg-gray-700 hover:bg-red-800 text-gray-300 hover:text-white px-2.5 py-1.5 rounded-lg transition" title="Khôi phục lại ban đầu">
+          <i class="fa-solid fa-rotate-left"></i>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ================= TOP ANNOUNCEMENT BAR ================= -->
+  <aside aria-label="Khuyến mãi đặc biệt" class="bg-burgundy-900 text-pastel-100 text-xs sm:text-sm py-2.5 px-4 text-center tracking-wide font-medium relative z-40">
+    <div class="container mx-auto flex items-center justify-center space-x-2">
+      <span class="inline-block animate-pulse text-gold-400">✨</span>
+      <span class="editable-text" data-key="top-announcement">ĐỘC QUYỀN MƠ STORE: <strong>Ưu Đãi Ra Mắt BST Nàng Thơ Lên Tới 45%</strong> + Miễn Phí Vận Chuyển Toàn Quốc</span>
+      <span class="hidden md:inline text-gold-400">|</span>
+      <span class="hidden md:inline text-gold-400 font-semibold">Hotline: <a href="tel:0369670374" class="underline hover:text-white font-bold store-phone">0369670374</a></span>
+      <span class="hidden lg:inline text-pastel-200">| Chỉ còn <strong id="slots-left" class="text-gold-400 underline editable-text" data-key="slots-count">9</strong> suất quà khăn lụa hôm nay!</span>
+    </div>
+  </aside>
+
+  <!-- ================= NAVBAR ================= -->
+  <header id="main-header" class="sticky top-0 z-30 bg-pastel-50/95 backdrop-blur-md transition-all duration-300 border-b border-pastel-200">
+    <div class="container mx-auto px-4 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logo & Slogan -->
+      <a href="#" class="flex items-center space-x-3 group">
+        <div class="w-11 h-11 rounded-full bg-burgundy-700 flex items-center justify-center text-white shadow-md group-hover:bg-burgundy-800 transition transform group-hover:scale-105 overflow-hidden">
+          <img src="logo.jpg" alt="Logo Mơ Store" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="w-full h-full hidden items-center justify-center">
+            <i class="fa-solid fa-feather-pointed text-lg"></i>
+          </div>
+        </div>
+        <div>
+          <span class="font-serif text-3xl font-bold tracking-tight text-burgundy-800 block leading-tight editable-text" data-key="store-brand-name">Mơ Store</span>
+          <span class="text-[10px] uppercase tracking-[0.2em] text-burgundy-600 block font-semibold editable-text store-slogan" data-key="store-slogan">“Mỗi bộ đồ là một câu chuyện.”</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden md:flex items-center space-x-7 font-medium text-sm text-charcoal-800">
+        <a href="#hero" class="hover:text-burgundy-700 transition">Về Mơ Store</a>
+        <a href="#social-proof" class="hover:text-burgundy-700 transition">Khách Hàng Nói Gì</a>
+        <a href="#features" class="hover:text-burgundy-700 transition">4 Điểm Tôn Dáng</a>
+        <a href="#collection" class="hover:text-burgundy-700 transition">BST Mới</a>
+        <a href="#offers" class="text-burgundy-700 font-bold hover:text-burgundy-900 transition flex items-center space-x-1.5">
+          <span>Ưu Đãi Flash Sale</span>
+          <span class="w-2 h-2 rounded-full bg-burgundy-600 animate-ping"></span>
+        </a>
+      </nav>
+
+      <!-- Action Button (Red Burgundy CTA & Hotline) -->
+      <div class="flex items-center space-x-3">
+        <a href="tel:0369670374" class="hidden xl:inline-flex items-center space-x-1.5 text-xs font-bold text-burgundy-800 hover:text-burgundy-600 transition">
+          <i class="fa-solid fa-phone-volume text-burgundy-600"></i>
+          <span class="store-phone editable-text" data-key="store-phone">0369670374</span>
+        </a>
+        <a href="#offers" class="hidden sm:inline-flex items-center space-x-2 bg-burgundy-700 hover:bg-burgundy-800 text-white px-5 py-2.5 rounded-full font-semibold text-sm shadow-md shadow-burgundy-700/20 hover:shadow-burgundy-glow transition-all transform hover:-translate-y-0.5">
+          <i class="fa-solid fa-gift text-gold-400"></i>
+          <span class="editable-text" data-key="nav-cta-text">Nhận Ưu Đãi 45%</span>
+        </a>
+        <button id="mobile-menu-btn" class="md:hidden text-burgundy-800 text-2xl focus:outline-none p-1" aria-label="Mở menu">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-pastel-100 border-b border-pastel-300 px-6 py-4 space-y-3 font-medium">
+      <div class="pb-2 border-b border-pastel-200 text-xs text-burgundy-800 italic store-slogan">
+        Slogan: “Mỗi bộ đồ là một câu chuyện.”
+      </div>
+      <a href="#hero" class="block py-2 text-charcoal-800 hover:text-burgundy-700">Về Mơ Store</a>
+      <a href="#social-proof" class="block py-2 text-charcoal-800 hover:text-burgundy-700">Đánh Giá Từ Khách Hàng (50k+)</a>
+      <a href="#features" class="block py-2 text-charcoal-800 hover:text-burgundy-700">4 Điểm Tôn Dáng Độc Quyền</a>
+      <a href="#collection" class="block py-2 text-charcoal-800 hover:text-burgundy-700">BST Váy Thiết Kế & Áo Kiểu</a>
+      <a href="#offers" class="block py-2 text-burgundy-700 font-bold">Ưu Đãi Flash Sale -45%</a>
+      <a href="#footer-trust" class="block py-2 text-charcoal-800 hover:text-burgundy-700">Địa Chỉ Cửa Hàng & CSKH</a>
+      <a href="#order-section" class="w-full text-center block bg-burgundy-700 text-white py-3 rounded-full font-semibold shadow-md">
+        Đặt Hàng Giữ Ưu Đãi Ngay
+      </a>
+    </div>
+  </header>
+
+
+  <!-- ========================================================================= -->
+  <!-- KHỐI 1: HERO SECTION (GÂY CHÚ Ý TRONG 3 GIÂY)                            -->
+  <!-- ========================================================================= -->
+  <section id="hero" class="relative overflow-hidden pt-8 pb-16 lg:py-24 bg-gradient-to-b from-pastel-100 via-pastel-50 to-pastel-100">
+    <div class="absolute top-10 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-pastel-200/60 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+    <div class="absolute -bottom-10 right-0 w-96 h-96 bg-burgundy-500/10 rounded-full blur-2xl -z-10 pointer-events-none"></div>
+
+    <div class="container mx-auto px-4 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- Left Column: Copywriting & High Conversion CTAs -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          
+          <!-- Category Eyebrow Tag -->
+          <div class="inline-flex items-center space-x-2 bg-pastel-200/90 border border-burgundy-600/30 text-burgundy-800 text-xs sm:text-sm font-semibold px-4 py-1.5 rounded-full shadow-sm">
+            <span class="w-2 h-2 rounded-full bg-burgundy-700"></span>
+            <span class="tracking-wider uppercase editable-text" data-key="hero-eyebrow">BST NÀNG THƠ CAO CẤP • ĐỘC QUYỀN MƠ STORE</span>
+          </div>
+
+          <!-- Main Hook Headline -->
+          <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-burgundy-900 leading-[1.15] tracking-tight">
+            <span class="editable-text" data-key="hero-headline-1">Đánh Thức Nàng Thơ Tỏa Sáng</span>
+            <span class="block text-burgundy-700 italic font-normal mt-1 text-3xl sm:text-4xl lg:text-5xl editable-text store-slogan" data-key="hero-headline-2">
+              “Mỗi Bộ Đồ Là Một Câu Chuyện.”
+            </span>
+          </h1>
+
+          <!-- Sub-headline -->
+          <p class="text-base sm:text-lg text-charcoal-800/90 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed editable-text" data-key="hero-subheadline">
+            Nàng xứng đáng bước đi với sự tự tin rạng ngời và kiêu hãnh nhất. Sự hòa quyện tinh tế giữa <strong>Lụa Ngọc Trai & Tơ Ép Hoa cao cấp</strong> cùng kỹ thuật <strong>chiết eo Corset chuẩn Pháp</strong> giúp nàng hack 5cm chiều cao, khéo léo giấu nhẹm mọi khuyết điểm để hóa thân thành nàng thơ vạn người mê.
+          </p>
+
+          <!-- Core Call to Actions -->
+          <div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+            <a href="#offers" class="w-full sm:w-auto inline-flex items-center justify-center space-x-3 bg-burgundy-700 hover:bg-burgundy-800 text-white text-lg font-bold px-8 py-4 rounded-full shadow-burgundy-glow hover:shadow-2xl transform hover:-translate-y-1 transition duration-300 group">
+              <span class="editable-text" data-key="hero-primary-cta">SĂN NGAY ƯU ĐÃI 45%</span>
+              <i class="fa-solid fa-arrow-right text-gold-400 group-hover:translate-x-1.5 transition-transform"></i>
+            </a>
+
+            <a href="#collection" class="w-full sm:w-auto inline-flex items-center justify-center space-x-2 border-2 border-burgundy-700 text-burgundy-800 hover:bg-burgundy-700 hover:text-white text-base font-semibold px-6 py-3.5 rounded-full transition duration-300">
+              <i class="fa-regular fa-eye text-burgundy-600"></i>
+              <span class="editable-text" data-key="hero-secondary-cta">Khám Phá Bộ Sưu Tập</span>
+            </a>
+          </div>
+
+          <!-- Quick Trust Badges Under CTA -->
+          <div class="pt-4 border-t border-pastel-300/80 flex flex-wrap items-center justify-center lg:justify-start gap-y-2 gap-x-6 text-xs text-charcoal-800/85">
+            <div class="flex items-center space-x-1.5">
+              <i class="fa-solid fa-circle-check text-burgundy-700"></i>
+              <span class="editable-text" data-key="hero-trust-1">100% Đồng kiểm tại nhà trước khi trả tiền</span>
+            </div>
+            <div class="flex items-center space-x-1.5">
+              <i class="fa-solid fa-arrows-rotate text-burgundy-700"></i>
+              <span class="editable-text" data-key="hero-trust-2">Đổi size miễn phí trong 7 ngày</span>
+            </div>
+            <div class="flex items-center space-x-1.5">
+              <i class="fa-solid fa-truck-fast text-burgundy-700"></i>
+              <span class="editable-text" data-key="hero-trust-3">Freeship toàn quốc từ 2 sản phẩm</span>
+            </div>
+          </div>
+
+          <!-- Micro Social Proof Snippet -->
+          <div class="flex items-center justify-center lg:justify-start space-x-3 pt-2">
+            <div class="flex -space-x-2 overflow-hidden">
+              <img class="inline-block h-9 w-9 rounded-full ring-2 ring-white object-cover editable-img" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="Khách hàng Mơ Store">
+              <img class="inline-block h-9 w-9 rounded-full ring-2 ring-white object-cover editable-img" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=120&q=80" alt="Khách hàng Mơ Store">
+              <img class="inline-block h-9 w-9 rounded-full ring-2 ring-white object-cover editable-img" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=120&q=80" alt="Khách hàng Mơ Store">
+              <img class="inline-block h-9 w-9 rounded-full ring-2 ring-white object-cover editable-img" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=120&q=80" alt="Khách hàng Mơ Store">
+            </div>
+            <div class="text-left">
+              <div class="flex text-gold-500 text-xs space-x-0.5">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text-xs text-charcoal-800 font-medium">
+                <strong>4.9/5</strong> từ hơn <span class="text-burgundy-700 font-bold editable-text" data-key="hero-rating-count">50.000+</span> Nàng Thơ Việt
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Hero Visual Banner -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-sm lg:max-w-none">
+            <div class="absolute -inset-3 bg-gradient-to-tr from-burgundy-700 via-pastel-300 to-burgundy-800 rounded-3xl opacity-30 blur-lg transform rotate-2"></div>
+            
+            <!-- Main Hero Image (Editable) -->
+            <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-pastel-200">
+              <img id="hero-main-img" src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=800&q=85" 
+                   alt="BST Váy Thiết Kế Đỏ Đô Nàng Thơ - Mơ Store" 
+                   class="w-full h-[530px] object-cover object-top transform hover:scale-105 transition duration-700 editable-img"
+                   title="Nhấp vào để đổi link ảnh banner chính">
+              
+              <div class="absolute inset-0 bg-gradient-to-t from-burgundy-900/70 via-transparent to-transparent pointer-events-none"></div>
+              
+              <!-- Badge in Image -->
+              <div class="absolute bottom-5 left-5 right-5 text-white">
+                <span class="bg-gold-500 text-burgundy-900 text-[11px] font-extrabold uppercase px-2.5 py-1 rounded-sm tracking-wider editable-text" data-key="hero-img-badge">LIMITED EDITION</span>
+                <p class="font-serif text-xl font-bold mt-1 text-white text-shadow-sm editable-text" data-key="hero-img-title">Đầm Dạ Hội Lụa Rượu Vang "Rosé Petal"</p>
+                <p class="text-xs text-pastel-200 editable-text" data-key="hero-img-desc">Bán chạy nhất tuần qua • 100% Lụa Tơ Thượng Phẩm</p>
+              </div>
+            </div>
+
+            <!-- Floating Badge 1 -->
+            <div class="absolute -top-4 -left-6 sm:-left-8 bg-white/95 backdrop-blur-md px-4 py-3 rounded-2xl shadow-xl border border-pastel-300 flex items-center space-x-3 animate-float">
+              <div class="w-10 h-10 rounded-full bg-pastel-100 flex items-center justify-center text-burgundy-700 text-lg">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+              </div>
+              <div>
+                <p class="text-[10px] text-gray-500 uppercase font-semibold">Bí mật độc quyền</p>
+                <p class="text-xs font-bold text-burgundy-800 editable-text" data-key="hero-float-badge-1">Hack dáng 5cm & Siết eo ngọc ngà</p>
+              </div>
+            </div>
+
+            <!-- Floating Badge 2 -->
+            <div class="absolute -bottom-6 -right-4 sm:-right-6 bg-burgundy-800 text-white px-5 py-3.5 rounded-2xl shadow-burgundy-glow border border-burgundy-600 text-center animate-pulse-slow">
+              <span class="block text-2xl font-serif font-black text-gold-400 leading-none editable-text" data-key="hero-float-discount">-45%</span>
+              <span class="text-[10px] uppercase font-bold tracking-wider text-pastel-100 editable-text" data-key="hero-float-note">Duy nhất hôm nay</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================================================= -->
+  <!-- KHỐI 2: SOCIAL PROOF (XÂY DỰNG NIỀM TIN VỮNG CHẮC)                         -->
+  <!-- ========================================================================= -->
+  <section id="social-proof" class="py-16 lg:py-20 bg-white relative">
+    <div class="container mx-auto px-4 lg:px-8">
+      
+      <!-- Top Numbers Grid -->
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 pb-14 border-b border-pastel-200 text-center">
+        
+        <div class="p-5 rounded-2xl bg-pastel-50 border border-pastel-200 hover:shadow-md transition">
+          <p class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-burgundy-800 editable-text" data-key="stat-num-1">52.400+</p>
+          <p class="text-xs sm:text-sm text-charcoal-800 font-medium mt-1 editable-text" data-key="stat-label-1">Đơn Hàng Đã Trao Gửi Yêu Thương</p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-pastel-50 border border-pastel-200 hover:shadow-md transition">
+          <p class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-burgundy-800 editable-text" data-key="stat-num-2">98.8%</p>
+          <p class="text-xs sm:text-sm text-charcoal-800 font-medium mt-1 editable-text" data-key="stat-label-2">Nàng Hài Lòng & Quay Lại Đặt Mua</p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-pastel-50 border border-pastel-200 hover:shadow-md transition">
+          <p class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-burgundy-800 editable-text" data-key="stat-num-3">100%</p>
+          <p class="text-xs sm:text-sm text-charcoal-800 font-medium mt-1 editable-text" data-key="stat-label-3">Ảnh Tự Chụp Thật & Chuẩn Đường Kim</p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-pastel-50 border border-pastel-200 hover:shadow-md transition">
+          <p class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-burgundy-800 editable-text" data-key="stat-num-4">4.9 / 5 <span class="text-gold-500 text-2xl">★</span></p>
+          <p class="text-xs sm:text-sm text-charcoal-800 font-medium mt-1 editable-text" data-key="stat-label-4">Điểm Đánh Giá Từ Hơn 15.000 Feedback</p>
+        </div>
+
+      </div>
+
+      <!-- Heading Section -->
+      <div class="text-center max-w-2xl mx-auto pt-14 pb-12">
+        <span class="text-burgundy-700 text-xs font-bold uppercase tracking-widest bg-pastel-100 px-3.5 py-1 rounded-full border border-burgundy-600/20 editable-text" data-key="proof-eyebrow">
+          CÂU CHUYỆN KHÁCH HÀNG & PHẢN HỒI THỰC TẾ
+        </span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-burgundy-900 mt-3 editable-text" data-key="proof-heading">
+          Hơn 50.000 Nàng Thơ Đã Tỏa Sáng Cùng Mơ Store
+        </h2>
+        <p class="text-sm sm:text-base text-charcoal-800/80 mt-2 editable-text" data-key="proof-desc">
+          Lắng nghe những trải nghiệm chân thật từ các cô gái đã chọn Mơ Store cho những khoảnh khắc quan trọng nhất.
+        </p>
+      </div>
+
+      <!-- Testimonials Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Feedback 1 -->
+        <div class="bg-pastel-50 rounded-3xl p-6 lg:p-8 border border-pastel-200 shadow-pink-soft flex flex-col justify-between hover:-translate-y-1 transition duration-300">
+          <div>
+            <div class="flex text-gold-500 text-sm mb-4">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="font-serif text-lg italic text-burgundy-900 font-semibold mb-3 editable-text" data-key="fb1-quote">
+              "Đi làm mà ai cũng hỏi mua váy ở đâu, giấu bụng mỡ đỉnh thực sự!"
+            </p>
+            <p class="text-sm text-charcoal-800/90 leading-relaxed editable-text" data-key="fb1-body">
+              "Mình vốn tự ti vòng 2 sau sinh, bình thường rất ngại mặc váy ôm. Nhưng chiếc đầm đỏ đô dáng chữ A của Mơ Store làm mình ngỡ ngàng. Đường chiết eo cao vừa vặn che nhẹm bụng dưới, chất vải lụa tơ sờ mát rượi, không hề nhăn dù ngồi văn phòng cả ngày!"
+            </p>
+          </div>
+          
+          <div class="pt-6 mt-6 border-t border-pastel-200 flex items-center space-x-3">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=120&q=80" alt="Khách hàng Thuỳ Chi" class="w-12 h-12 rounded-full object-cover ring-2 ring-burgundy-600 editable-img">
+            <div>
+              <h4 class="font-bold text-sm text-burgundy-900 editable-text" data-key="fb1-author">Thuỳ Chi, 28 tuổi</h4>
+              <p class="text-xs text-charcoal-800/70 editable-text" data-key="fb1-role">Quản lý đối ngoại • TP. Biên Hòa</p>
+              <span class="inline-block mt-1 text-[10px] bg-pastel-200 text-burgundy-800 px-2 py-0.5 rounded font-medium editable-text" data-key="fb1-tag">Đã mua: Đầm Dạ Tiệc Rượu Vang</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feedback 2 -->
+        <div class="bg-pastel-50 rounded-3xl p-6 lg:p-8 border-2 border-burgundy-600/40 shadow-burgundy-glow/15 flex flex-col justify-between relative transform lg:-translate-y-2 hover:-translate-y-3 transition duration-300">
+          <div class="absolute -top-3.5 right-6 bg-burgundy-700 text-white text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+            Review Nổi Bật
+          </div>
+
+          <div>
+            <div class="flex text-gold-500 text-sm mb-4">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="font-serif text-lg italic text-burgundy-900 font-semibold mb-3 editable-text" data-key="fb2-quote">
+              "Người yêu khen nức nở trong buổi kỷ niệm 2 năm!"
+            </p>
+            <p class="text-sm text-charcoal-800/90 leading-relaxed editable-text" data-key="fb2-body">
+              "Lúc mở hộp hàng thơm nức mùi hoa khô, đóng gói tỉ mỉ như một món quà tình yêu. Váy màu đỏ đô tôn da dã man, mình da hơi ngăm mà mặc lên sáng bừng khuôn mặt. Cảm giác sang trọng, kiêu kỳ như tiểu thư quý tộc ấy. Chắc chắn sẽ ủng hộ dài dài!"
+            </p>
+          </div>
+          
+          <div class="pt-6 mt-6 border-t border-pastel-200 flex items-center space-x-3">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&q=80" alt="Khách hàng Mai Anh" class="w-12 h-12 rounded-full object-cover ring-2 ring-burgundy-600 editable-img">
+            <div>
+              <h4 class="font-bold text-sm text-burgundy-900 editable-text" data-key="fb2-author">Mai Anh, 24 tuổi</h4>
+              <p class="text-xs text-charcoal-800/70 editable-text" data-key="fb2-role">Content Creator • TP. Hồ Chí Minh</p>
+              <span class="inline-block mt-1 text-[10px] bg-burgundy-100 text-burgundy-800 px-2 py-0.5 rounded font-medium editable-text" data-key="fb2-tag">Đã mua: Combo Nàng Thơ Kiêu Kỳ</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feedback 3 -->
+        <div class="bg-pastel-50 rounded-3xl p-6 lg:p-8 border border-pastel-200 shadow-pink-soft flex flex-col justify-between hover:-translate-y-1 transition duration-300">
+          <div>
+            <div class="flex text-gold-500 text-sm mb-4">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="font-serif text-lg italic text-burgundy-900 font-semibold mb-3 editable-text" data-key="fb3-quote">
+              "Chính sách kiểm hàng trước khi trả tiền quá an tâm."
+            </p>
+            <p class="text-sm text-charcoal-800/90 leading-relaxed editable-text" data-key="fb3-body">
+              "Mua sắm online mình sợ nhất là nhận về giẻ lau. Ở Mơ Store được shipper cho mở hàng kiểm tra kỹ lưỡng từ đường may, dây kéo đến cúc bọc lụa rồi mới trả tiền. Phom may rất đứng dáng, chuẩn size y như bảng hướng dẫn. Rất xứng đáng từng đồng!"
+            </p>
+          </div>
+          
+          <div class="pt-6 mt-6 border-t border-pastel-200 flex items-center space-x-3">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="Khách hàng Phương Thảo" class="w-12 h-12 rounded-full object-cover ring-2 ring-burgundy-600 editable-img">
+            <div>
+              <h4 class="font-bold text-sm text-burgundy-900 editable-text" data-key="fb3-author">Phương Thảo, 32 tuổi</h4>
+              <p class="text-xs text-charcoal-800/70 editable-text" data-key="fb3-role">Dược sĩ & Kinh doanh • Tam Hiệp, Đồng Nai</p>
+              <span class="inline-block mt-1 text-[10px] bg-pastel-200 text-burgundy-800 px-2 py-0.5 rounded font-medium editable-text" data-key="fb3-tag">Đã mua: Set Váy Tweed Nữ Hoàng</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Customer Real Photos Grid -->
+      <div class="mt-14 pt-8 border-t border-pastel-200">
+        <p class="text-center text-xs uppercase tracking-widest text-charcoal-800/70 font-semibold mb-6 editable-text" data-key="gallery-title">Khoảnh Khắc Tỏa Sáng Thật Cùng Mơ Store Trên Toàn Quốc</p>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+          <div class="relative rounded-2xl overflow-hidden group h-64">
+            <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=400&q=80" alt="Ảnh khách mặc đầm đỏ đô" class="w-full h-full object-cover group-hover:scale-110 transition duration-500 editable-img">
+            <div class="absolute inset-0 bg-gradient-to-t from-burgundy-900/60 to-transparent flex items-end p-3 text-white text-xs">
+              <span class="editable-text" data-key="gal-caption-1">Nàng Hạnh Linh - Đầm đỏ tiệc tối</span>
+            </div>
+          </div>
+          <div class="relative rounded-2xl overflow-hidden group h-64">
+            <img src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=400&q=80" alt="Ảnh khách mặc đầm hồng" class="w-full h-full object-cover group-hover:scale-110 transition duration-500 editable-img">
+            <div class="absolute inset-0 bg-gradient-to-t from-burgundy-900/60 to-transparent flex items-end p-3 text-white text-xs">
+              <span class="editable-text" data-key="gal-caption-2">Nàng Bích Thủy - Váy hồng dạo phố</span>
+            </div>
+          </div>
+          <div class="relative rounded-2xl overflow-hidden group h-64">
+            <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=400&q=80" alt="Ảnh khách mặc áo kiểu" class="w-full h-full object-cover group-hover:scale-110 transition duration-500 editable-img">
+            <div class="absolute inset-0 bg-gradient-to-t from-burgundy-900/60 to-transparent flex items-end p-3 text-white text-xs">
+              <span class="editable-text" data-key="gal-caption-3">Nàng Kim Ngân - Áo kiểu công sở sang xịn</span>
+            </div>
+          </div>
+          <div class="relative rounded-2xl overflow-hidden group h-64">
+            <img src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&fit=crop&w=400&q=80" alt="Ảnh khách mặc chân váy và quần suông" class="w-full h-full object-cover group-hover:scale-110 transition duration-500 editable-img">
+            <div class="absolute inset-0 bg-gradient-to-t from-burgundy-900/60 to-transparent flex items-end p-3 text-white text-xs">
+              <span class="editable-text" data-key="gal-caption-4">Nàng Hà My - Quần suông hack dáng</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================================================= -->
+  <!-- KHỐI 3: FEATURES & BENEFITS (KÍCH THÍCH MONG MUỐN & QUAN TÂM)             -->
+  <!-- ========================================================================= -->
+  <section id="features" class="py-16 lg:py-24 bg-pastel-100/60 relative">
+    <div class="container mx-auto px-4 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-burgundy-700 text-xs font-bold uppercase tracking-widest bg-pastel-200 px-3.5 py-1 rounded-full border border-burgundy-600/20 editable-text" data-key="feat-eyebrow">
+          BÍ QUYẾT TẠO NÊN SỰ KHÁC BIỆT
+        </span>
+        <h2 class="font-serif text-3xl sm:text-5xl font-bold text-burgundy-900 mt-3 editable-text" data-key="feat-heading">
+          4 Điểm Vàng Tôn Vinh Vóc Dáng Nàng
+        </h2>
+        <p class="text-sm sm:text-base text-charcoal-800/80 mt-3 editable-text" data-key="feat-desc">
+          Không đơn thuần là may mặc, mỗi thiết kế của Mơ Store là một bản hòa ca giữa kỹ nghệ may đo thủ công và thấu hiểu đường cong phụ nữ.
+        </p>
+      </div>
+
+      <!-- 4 Core Pillars Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <!-- Pillar 1 -->
+        <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-500 border border-pastel-200 group flex flex-col">
+          <div class="relative h-56 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=600&q=80" alt="Chất liệu lụa ngọc trai cao cấp" class="w-full h-full object-cover group-hover:scale-110 transition duration-700 editable-img">
+            <div class="absolute top-4 left-4 bg-burgundy-700 text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shadow">01</div>
+            <div class="absolute bottom-3 right-3 bg-white/95 backdrop-blur-sm px-2.5 py-1 rounded text-[11px] font-semibold text-burgundy-800 editable-text" data-key="p1-tag">Lụa Tơ Thượng Phẩm</div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-serif text-xl font-bold text-burgundy-900 mb-2 editable-text" data-key="p1-title">Chất Liệu "Lướt Trên Làn Da"</h3>
+              <p class="text-xs sm:text-sm text-charcoal-800/80 leading-relaxed editable-text" data-key="p1-desc">
+                Tuyển chọn dòng Lụa tơ ngọc trai, voan hoa dệt nổi và Tweed kim tuyến: mềm mát, thoáng khí 4 mùa, mướt mịn và <strong>cam kết không nhăn nhúm</strong> sau ngày dài vận động.
+              </p>
+            </div>
+            <div class="pt-4 mt-4 border-t border-pastel-100 flex items-center text-xs font-semibold text-burgundy-700">
+              <i class="fa-solid fa-sparkles mr-1.5"></i>
+              <span class="editable-text" data-key="p1-note">Êm ái như chạm vào làn mây</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pillar 2 -->
+        <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-500 border border-pastel-200 group flex flex-col">
+          <div class="relative h-56 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=600&q=80" alt="Phom dáng chiết eo chuẩn Pháp" class="w-full h-full object-cover group-hover:scale-110 transition duration-700 editable-img">
+            <div class="absolute top-4 left-4 bg-burgundy-700 text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shadow">02</div>
+            <div class="absolute bottom-3 right-3 bg-white/95 backdrop-blur-sm px-2.5 py-1 rounded text-[11px] font-semibold text-burgundy-800 editable-text" data-key="p2-tag">Siết Eo 3-5cm</div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-serif text-xl font-bold text-burgundy-900 mb-2 editable-text" data-key="p2-title">Rập Corset Hack Dáng Diệu Kỳ</h3>
+              <p class="text-xs sm:text-sm text-charcoal-800/80 leading-relaxed editable-text" data-key="p2-desc">
+                Ứng dụng kỹ thuật xếp ly 3D và <strong>đường cắt rập Corset Pháp</strong>: giấu gọn khuyết điểm bụng dưới, nâng vòng 1 tự nhiên và kéo dài tỉ lệ đôi chân thon thả.
+              </p>
+            </div>
+            <div class="pt-4 mt-4 border-t border-pastel-100 flex items-center text-xs font-semibold text-burgundy-700">
+              <i class="fa-solid fa-wand-magic mr-1.5"></i>
+              <span class="editable-text" data-key="p2-note">Vừa vặn chuẩn từng đường cong</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pillar 3 -->
+        <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-500 border border-pastel-200 group flex flex-col">
+          <div class="relative h-56 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=600&q=80" alt="Tính ứng dụng cao từ công sở tới tiệc tối" class="w-full h-full object-cover group-hover:scale-110 transition duration-700 editable-img">
+            <div class="absolute top-4 left-4 bg-burgundy-700 text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shadow">03</div>
+            <div class="absolute bottom-3 right-3 bg-white/95 backdrop-blur-sm px-2.5 py-1 rounded text-[11px] font-semibold text-burgundy-800 editable-text" data-key="p3-tag">Versatile Day-to-Night</div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-serif text-xl font-bold text-burgundy-900 mb-2 editable-text" data-key="p3-title">Biến Hóa Đa Năng "Day-To-Night"</h3>
+              <p class="text-xs sm:text-sm text-charcoal-800/80 leading-relaxed editable-text" data-key="p3-desc">
+                Ban ngày thanh lịch chỉn chu nơi văn phòng, buổi tối chỉ cần phối cùng chút phụ kiện ánh kim là nàng đã sẵn sàng cho buổi dạ tiệc hay cuộc hẹn lãng mạn.
+              </p>
+            </div>
+            <div class="pt-4 mt-4 border-t border-pastel-100 flex items-center text-xs font-semibold text-burgundy-700">
+              <i class="fa-solid fa-gem mr-1.5"></i>
+              <span class="editable-text" data-key="p3-note">Một set đồ - Muôn vàn phong cách</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pillar 4 -->
+        <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-500 border border-pastel-200 group flex flex-col">
+          <div class="relative h-56 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=600&q=80" alt="Thiết kế độc quyền không đụng hàng" class="w-full h-full object-cover group-hover:scale-110 transition duration-700 editable-img">
+            <div class="absolute top-4 left-4 bg-burgundy-700 text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm shadow">04</div>
+            <div class="absolute bottom-3 right-3 bg-white/95 backdrop-blur-sm px-2.5 py-1 rounded text-[11px] font-semibold text-burgundy-800 editable-text" data-key="p4-tag">Giới Hạn 200 Chiếc</div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-serif text-xl font-bold text-burgundy-900 mb-2 editable-text" data-key="p4-title">Bản Quyền Độc Bản - Không Đụng Hàng</h3>
+              <p class="text-xs sm:text-sm text-charcoal-800/80 leading-relaxed editable-text" data-key="p4-desc">
+                Mỗi mẫu chỉ sản xuất <strong>giới hạn 200 chiếc</strong> trên cả nước. Cúc bọc thủ công, đường chỉ may cuộn cao cấp giữ trọn sự độc tôn và khí chất riêng cho nàng.
+              </p>
+            </div>
+            <div class="pt-4 mt-4 border-t border-pastel-100 flex items-center text-xs font-semibold text-burgundy-700">
+              <i class="fa-solid fa-crown mr-1.5"></i>
+              <span class="editable-text" data-key="p4-note">Dấu ấn độc bản của riêng nàng</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Feature Interactive Product Collection Showcase -->
+      <div id="collection" class="mt-20">
+        
+        <div class="text-center max-w-2xl mx-auto mb-10">
+          <span class="text-burgundy-700 text-xs font-bold uppercase tracking-widest bg-pastel-200 px-3.5 py-1 rounded-full editable-text" data-key="col-eyebrow">
+            DANH MỤC THỜI TRANG CAO CẤP MƠ STORE
+          </span>
+          <h3 class="font-serif text-3xl sm:text-4xl font-bold text-burgundy-900 mt-2 editable-text store-slogan" data-key="col-title">
+            “Mỗi Bộ Đồ Là Một Câu Chuyện.”
+          </h3>
+          <p class="text-xs sm:text-sm text-charcoal-800/80 mt-1 editable-text" data-key="col-desc">
+            Lựa chọn thiết kế nàng yêu thích nhất hôm nay để nhận trọn vẹn ưu đãi lên tới 45%
+          </p>
+
+          <!-- Filter Category Tabs -->
+          <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mt-6">
+            <button onclick="filterCategory('all')" id="tab-all" class="category-tab px-5 py-2 rounded-full text-xs sm:text-sm font-bold bg-burgundy-700 text-white shadow-sm transition">
+              Tất Cả Sản Phẩm
+            </button>
+            <button onclick="filterCategory('dress')" id="tab-dress" class="category-tab px-5 py-2 rounded-full text-xs sm:text-sm font-semibold bg-white text-burgundy-900 border border-pastel-300 hover:bg-pastel-100 transition">
+              Váy Thiết Kế & Dạ Tiệc
+            </button>
+            <button onclick="filterCategory('blouse')" id="tab-blouse" class="category-tab px-5 py-2 rounded-full text-xs sm:text-sm font-semibold bg-white text-burgundy-900 border border-pastel-300 hover:bg-pastel-100 transition">
+              Áo Kiểu Tiểu Thư
+            </button>
+            <button onclick="filterCategory('bottom')" id="tab-bottom" class="category-tab px-5 py-2 rounded-full text-xs sm:text-sm font-semibold bg-white text-burgundy-900 border border-pastel-300 hover:bg-pastel-100 transition">
+              Quần & Chân Đầm Tôn Dáng
+            </button>
+          </div>
+        </div>
+
+        <!-- Product Cards Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <!-- Product 1 -->
+          <div class="product-item category-dress bg-white rounded-3xl overflow-hidden border border-pastel-200 shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between group">
+            <div class="relative overflow-hidden">
+              <span class="absolute top-3 left-3 bg-burgundy-700 text-white text-[10px] font-bold uppercase px-2.5 py-1 rounded-full z-10 editable-text" data-key="prod1-badge">Best Seller</span>
+              <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=500&q=80" alt="Đầm dạ hội đỏ đô Mơ Store" class="w-full h-72 object-cover object-top group-hover:scale-105 transition duration-500 editable-img">
+              <div class="absolute bottom-2 right-2 bg-black/60 text-white text-[10px] px-2 py-0.5 rounded backdrop-blur-sm editable-text" data-key="prod1-tone">Tone Đỏ Đô</div>
+            </div>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <div>
+                <h4 class="font-serif text-lg font-bold text-burgundy-900 line-clamp-1 editable-text" data-key="prod1-name">Đầm Dạ Hội Lụa "Rosé Scarlet"</h4>
+                <p class="text-xs text-charcoal-800/70 mt-1 line-clamp-2 editable-text" data-key="prod1-desc">Lụa tơ rượu vang, chiết eo corset tạo eo thon, tôn da trắng sáng.</p>
+                <div class="flex items-baseline space-x-2 mt-3">
+                  <span class="font-serif text-xl font-bold text-burgundy-700 editable-text" data-key="prod1-price">485.000đ</span>
+                  <span class="text-xs line-through text-gray-400 editable-text" data-key="prod1-oldprice">720.000đ</span>
+                  <span class="text-[10px] bg-pastel-200 text-burgundy-800 font-bold px-1.5 py-0.5 rounded editable-text" data-key="prod1-discount">-33%</span>
+                </div>
+              </div>
+              <button onclick="selectPackage('Gói 1: Nàng Thơ Tinh Khôi (1 Món - 485.000đ)')" class="w-full mt-4 bg-pastel-100 hover:bg-burgundy-700 hover:text-white text-burgundy-800 font-bold py-2.5 rounded-full text-xs transition duration-300 border border-burgundy-700/20">
+                CHỌN MUA NGAY
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="product-item category-dress bg-white rounded-3xl overflow-hidden border border-pastel-200 shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between group">
+            <div class="relative overflow-hidden">
+              <span class="absolute top-3 left-3 bg-pastel-400 text-burgundy-900 text-[10px] font-bold uppercase px-2.5 py-1 rounded-full z-10 editable-text" data-key="prod2-badge">Mới Nhất</span>
+              <img src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=500&q=80" alt="Đầm hồng pastel Mơ Store" class="w-full h-72 object-cover object-top group-hover:scale-105 transition duration-500 editable-img">
+              <div class="absolute bottom-2 right-2 bg-black/60 text-white text-[10px] px-2 py-0.5 rounded backdrop-blur-sm editable-text" data-key="prod2-tone">Hồng Dịu Dàng</div>
+            </div>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <div>
+                <h4 class="font-serif text-lg font-bold text-burgundy-900 line-clamp-1 editable-text" data-key="prod2-name">Đầm Nàng Thơ "Sweet Petal"</h4>
+                <p class="text-xs text-charcoal-800/70 mt-1 line-clamp-2 editable-text" data-key="prod2-desc">Voan tơ dập nhăn bồng bềnh, cổ yếm xếp ly kiêu sa như nàng tiểu thư.</p>
+                <div class="flex items-baseline space-x-2 mt-3">
+                  <span class="font-serif text-xl font-bold text-burgundy-700 editable-text" data-key="prod2-price">485.000đ</span>
+                  <span class="text-xs line-through text-gray-400 editable-text" data-key="prod2-oldprice">690.000đ</span>
+                  <span class="text-[10px] bg-pastel-200 text-burgundy-800 font-bold px-1.5 py-0.5 rounded editable-text" data-key="prod2-discount">-30%</span>
+                </div>
+              </div>
+              <button onclick="selectPackage('Gói 1: Nàng Thơ Tinh Khôi (1 Món - 485.000đ)')" class="w-full mt-4 bg-pastel-100 hover:bg-burgundy-700 hover:text-white text-burgundy-800 font-bold py-2.5 rounded-full text-xs transition duration-300 border border-burgundy-700/20">
+                CHỌN MUA NGAY
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="product-item category-blouse bg-white rounded-3xl overflow-hidden border border-pastel-200 shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between group">
+            <div class="relative overflow-hidden">
+              <span class="absolute top-3 left-3 bg-burgundy-700 text-white text-[10px] font-bold uppercase px-2.5 py-1 rounded-full z-10 editable-text" data-key="prod3-badge">Thiết Kế Độc Quyền</span>
+              <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=500&q=80" alt="Áo kiểu lụa Mơ Store" class="w-full h-72 object-cover group-hover:scale-105 transition duration-500 editable-img">
+              <div class="absolute bottom-2 right-2 bg-black/60 text-white text-[10px] px-2 py-0.5 rounded backdrop-blur-sm editable-text" data-key="prod3-tone">Áo Kiểu Sang Trọng</div>
+            </div>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <div>
+                <h4 class="font-serif text-lg font-bold text-burgundy-900 line-clamp-1 editable-text" data-key="prod3-name">Áo Kiểu Lụa Nơ Cổ "Camellia"</h4>
+                <p class="text-xs text-charcoal-800/70 mt-1 line-clamp-2 editable-text" data-key="prod3-desc">Cổ thắt nơ kiểu Pháp, tay phồng nhẹ che khuyết điểm bắp tay tuyệt đối.</p>
+                <div class="flex items-baseline space-x-2 mt-3">
+                  <span class="font-serif text-xl font-bold text-burgundy-700 editable-text" data-key="prod3-price">385.000đ</span>
+                  <span class="text-xs line-through text-gray-400 editable-text" data-key="prod3-oldprice">550.000đ</span>
+                  <span class="text-[10px] bg-pastel-200 text-burgundy-800 font-bold px-1.5 py-0.5 rounded editable-text" data-key="prod3-discount">-30%</span>
+                </div>
+              </div>
+              <button onclick="selectPackage('Gói 1: Nàng Thơ Tinh Khôi (1 Món - 485.000đ)')" class="w-full mt-4 bg-pastel-100 hover:bg-burgundy-700 hover:text-white text-burgundy-800 font-bold py-2.5 rounded-full text-xs transition duration-300 border border-burgundy-700/20">
+                CHỌN MUA NGAY
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="product-item category-bottom bg-white rounded-3xl overflow-hidden border border-pastel-200 shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between group">
+            <div class="relative overflow-hidden">
+              <span class="absolute top-3 left-3 bg-gold-500 text-burgundy-900 text-[10px] font-bold uppercase px-2.5 py-1 rounded-full z-10 editable-text" data-key="prod4-badge">Hack Dáng 5cm</span>
+              <img src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&fit=crop&w=500&q=80" alt="Quần tây ống suông chân đầm Mơ Store" class="w-full h-72 object-cover group-hover:scale-105 transition duration-500 editable-img">
+              <div class="absolute bottom-2 right-2 bg-black/60 text-white text-[10px] px-2 py-0.5 rounded backdrop-blur-sm editable-text" data-key="prod4-tone">Quần & Đầm Tôn Dáng</div>
+            </div>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <div>
+                <h4 class="font-serif text-lg font-bold text-burgundy-900 line-clamp-1 editable-text" data-key="prod4-name">Quần Tây Ống Suông / Chân Váy</h4>
+                <p class="text-xs text-charcoal-800/70 mt-1 line-clamp-2 editable-text" data-key="prod4-desc">Lưng cao siết eo, chất tuyết mưa đứng form rũ tự nhiên, kéo chân dài miên man.</p>
+                <div class="flex items-baseline space-x-2 mt-3">
+                  <span class="font-serif text-xl font-bold text-burgundy-700 editable-text" data-key="prod4-price">395.000đ</span>
+                  <span class="text-xs line-through text-gray-400 editable-text" data-key="prod4-oldprice">590.000đ</span>
+                  <span class="text-[10px] bg-pastel-200 text-burgundy-800 font-bold px-1.5 py-0.5 rounded editable-text" data-key="prod4-discount">-33%</span>
+                </div>
+              </div>
+              <button onclick="selectPackage('Gói 1: Nàng Thơ Tinh Khôi (1 Món - 485.000đ)')" class="w-full mt-4 bg-pastel-100 hover:bg-burgundy-700 hover:text-white text-burgundy-800 font-bold py-2.5 rounded-full text-xs transition duration-300 border border-burgundy-700/20">
+                CHỌN MUA NGAY
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================================================= -->
+  <!-- KHỐI 4: OFFER & PRICE (ĐỘNG LỰC HÀNH ĐỘNG NGAY - FOMO ENGINE)             -->
+  <!-- ========================================================================= -->
+  <section id="offers" class="py-16 lg:py-24 bg-gradient-to-b from-pastel-100 via-white to-pastel-50 relative overflow-hidden">
+    <div class="absolute -top-24 -left-24 w-96 h-96 bg-burgundy-600/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-pastel-400/20 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="container mx-auto px-4 lg:px-8 relative z-10">
+      
+      <!-- FOMO Countdown Box -->
+      <div class="max-w-3xl mx-auto bg-gradient-to-r from-burgundy-900 via-burgundy-800 to-burgundy-900 text-white rounded-3xl p-6 sm:p-8 shadow-2xl border-2 border-gold-500/40 text-center mb-16">
+        <div class="inline-flex items-center space-x-2 bg-burgundy-700/80 px-4 py-1 rounded-full text-gold-400 text-xs font-bold uppercase tracking-wider mb-3">
+          <i class="fa-solid fa-fire animate-bounce"></i>
+          <span class="editable-text" data-key="fomo-badge">FLASH SALE MÙA LỄ HỘI • GIỚI HẠN DUY NHẤT HÔM NAY</span>
+        </div>
+        
+        <h2 class="font-serif text-2xl sm:text-4xl font-bold text-white mb-2 editable-text" data-key="fomo-heading">
+          Cơ Hội Duy Nhất Để Sở Hữu Mức Giá Ưu Đãi Đến -45%
+        </h2>
+        <p class="text-xs sm:text-sm text-pastel-200 mb-6 editable-text" data-key="fomo-desc">
+          Chương trình ưu đãi kết thúc khi đồng hồ trở về số 0 hoặc khi hết 30 suất quà tặng khăn lụa tơ tằm!
+        </p>
+
+        <!-- Realtime Countdown Timer -->
+        <div class="flex items-center justify-center space-x-3 sm:space-x-6 text-charcoal-900">
+          <div class="bg-white/95 rounded-2xl p-3 sm:p-4 w-16 sm:w-20 shadow-md">
+            <span id="hours" class="block font-serif text-2xl sm:text-4xl font-bold text-burgundy-800">03</span>
+            <span class="text-[10px] sm:text-xs uppercase font-semibold text-gray-500">Giờ</span>
+          </div>
+          <span class="text-white text-2xl sm:text-3xl font-bold">:</span>
+          <div class="bg-white/95 rounded-2xl p-3 sm:p-4 w-16 sm:w-20 shadow-md">
+            <span id="minutes" class="block font-serif text-2xl sm:text-4xl font-bold text-burgundy-800">45</span>
+            <span class="text-[10px] sm:text-xs uppercase font-semibold text-gray-500">Phút</span>
+          </div>
+          <span class="text-white text-2xl sm:text-3xl font-bold">:</span>
+          <div class="bg-white/95 rounded-2xl p-3 sm:p-4 w-16 sm:w-20 shadow-md">
+            <span id="seconds" class="block font-serif text-2xl sm:text-4xl font-bold text-burgundy-800">20</span>
+            <span class="text-[10px] sm:text-xs uppercase font-semibold text-gray-500">Giây</span>
+          </div>
+          <span class="text-white text-2xl sm:text-3xl font-bold">:</span>
+          <div class="bg-white/95 rounded-2xl p-3 sm:p-4 w-16 sm:w-20 shadow-md">
+            <span id="millis" class="block font-serif text-2xl sm:text-4xl font-bold text-burgundy-800">88</span>
+            <span class="text-[10px] sm:text-xs uppercase font-semibold text-gray-500">M.Giây</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Pricing Combos (3 Gói Ưu Đãi) -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch max-w-6xl mx-auto">
+        
+        <!-- Combo 1 -->
+        <div class="bg-white rounded-3xl p-6 lg:p-8 border border-pastel-200 shadow-sm flex flex-col justify-between hover:shadow-lg transition duration-300">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-charcoal-800/60 block mb-1 editable-text" data-key="c1-tag">GÓI TRẢI NGHIỆM</span>
+            <h3 class="font-serif text-2xl font-bold text-burgundy-900 mb-2 editable-text" data-key="c1-name">Nàng Thơ Tinh Khôi</h3>
+            <p class="text-xs text-charcoal-800/80 mb-4 editable-text" data-key="c1-desc">01 Váy Thiết Kế Hoặc Áo Kiểu Tự Chọn</p>
+            
+            <div class="flex items-baseline space-x-3 mb-6 pb-6 border-b border-pastel-200">
+              <span class="font-serif text-3xl sm:text-4xl font-black text-burgundy-700 editable-text" data-key="c1-price">485.000đ</span>
+              <span class="text-sm line-through text-gray-400 editable-text" data-key="c1-oldprice">690.000đ</span>
+              <span class="bg-pastel-200 text-burgundy-800 text-[11px] font-bold px-2 py-0.5 rounded editable-text" data-key="c1-discount">-30%</span>
+            </div>
+
+            <ul class="space-y-3 text-xs sm:text-sm text-charcoal-800/90 mb-8">
+              <li class="flex items-start space-x-2">
+                <i class="fa-solid fa-circle-check text-burgundy-700 mt-1"></i>
+                <span class="editable-text" data-key="c1-benefit-1">Tùy chọn tone: Đỏ Đô Sang Chảnh hoặc Hồng Pastel Dịu Ngọt</span>
+              </li>
+              <li class="flex items-start space-x-2">
+                <i class="fa-solid fa-circle-check text-burgundy-700 mt-1"></i>
+                <span class="editable-text" data-key="c1-benefit-2">Đủ size chuẩn phom từ S đến XL (Có Stylist tư vấn)</span>
+              </li>
+              <li class="flex items-start space-x-2">
+                <i class="fa-solid fa-gift text-gold-500 mt-1"></i>
+                <span class="editable-text" data-key="c1-benefit-3">Tặng 01 Cột tóc Scrunchie tơ tằm trị giá 50.000đ</span>
+              </li>
+              <li class="flex items-start space-x-2">
+                <i class="fa-solid fa-circle-check text-burgundy-700 mt-1"></i>
+                <span class="editable-text" data-key="c1-benefit-4">100% Đồng kiểm tại nhà trước khi thanh toán</span>
+              </li>
+            </ul>
+          </div>
+
+          <button onclick="selectPackage('Gói 1: Nàng Thơ Tinh Khôi (1 Món - 485.000đ)')" class="w-full bg-pastel-100 hover:bg-burgundy-700 hover:text-white text-burgundy-800 font-bold py-3.5 rounded-full transition duration-300 border border-burgundy-700/30">
+            CHỌN GÓI NÀY
+          </button>
+        </div>
+
+        <!-- Combo 2: BEST SELLER -->
+        <div class="bg-white rounded-3xl p-6 lg:p-8 border-2 border-burgundy-700 shadow-2xl flex flex-col justify-between relative transform md:-translate-y-4 hover:-translate-y-5 transition duration-300">
+          <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-burgundy-700 to-burgundy-900 text-white text-xs font-bold uppercase tracking-widest px-5 py-1.5 rounded-full shadow-md flex items-center space-x-1.5 whitespace-nowrap">
+            <i class="fa-solid fa-crown text-gold-400"></i>
+            <span class="editable-text" data-key="c2-ribbon">COMBO ĐƯỢC MUA NHIỀU NHẤT</span>
+          </div>
+
+          <div>
+            <div class="flex justify-between items-center mt-2 mb-1">
+              <span class="text-xs font-bold uppercase tracking-wider text-burgundy-700 editable-text" data-key="c2-tag">TIẾT KIỆM TỐI ĐA</span>
+              <span class="bg-gold-500 text-burgundy-900 text-[10px] font-black uppercase px-2 py-0.5 rounded editable-text" data-key="c2-gift-badge">TẶNG KHĂN LỤA 250K</span>
+            </div>
+            <h3 class="font-serif text-2xl sm:text-3xl font-bold text-burgundy-900 mb-2 editable-text" data-key="c2-name">Nàng Thơ Kiêu Kỳ</h3>
+            <p class="text-xs text-charcoal-800/80 mb-4 editable-text" data-key="c2-desc">02 Váy Thiết Kế / Áo Kiểu Tự Chọn + 01 Khăn Lụa Tơ Tằm</p>
+            
+            <div class="flex items-baseline space-x-3 mb-6 pb-6 border-b border-pastel-200">
+              <span class="font-serif text-3xl sm:text-4xl font-black text-burgundy-700 editable-text" data-key="c2-price">850.000đ</span>
+              <span class="text-sm line-through text-gray-400 editable-text" data-key="c2-oldprice">1.540.000đ</span>
+              <span class="bg-burgundy-700 text-white text-[11px] font-bold px-2 py-0.5 rounded editable-text" data-key="c2-discount">-45%</span>
+            </div>
+
+            <ul class="space-y-3 text-xs sm:text-sm text-charcoal-800/90 mb-8">
+              <li class="flex items-start space-x-2 font-medium">
+                <i class="fa-solid fa-circle-check text-burgundy-700 mt-1"></i>
+                <span class="editable-text" data-key="c2-benefit-1">Tùy chọn kết hợp 2 mẫu (Váy dạ tiệc, áo kiểu, chân đầm)</span>
+              </li>
+              <li class="flex items-start space-x-2 font-medium">
+                <i class="fa-solid fa-gift text-burgundy-700 mt-1"></i>
+                <span class="text-burgundy-900 font-bold editable-text" data-key="c2-benefit-2">Tặng 01 Khăn Lụa Vuông Tơ Tằm Pháp trị giá 250.000đ</span>
+              </li>
+              <li class="flex items-start space-x-2 font-medium">
+                <i class="fa-solid fa-truck-fast text-burgundy-700 mt-1"></i>
+                <span class="text-burgundy-800 font-bold editable-text" data-key="c2-benefit-3">MIỄN PHÍ VẬN CHUYỂN HỎA TỐC TOÀN QUỐC</span>
+              </li>
+              <li class="flex items-start space-x-2">
+                <i class="fa-solid fa-box-open text-burgundy-700 mt-1"></i>
+                <span class="editable-text" data-key="c2-benefit-4">Tặng hộp quà thắt nơ nhung Mơ Store sang trọng</span>
+              </li>
+              <li class="flex items-start space-x-2">
+                <i class="fa-solid fa-circle-check text-burgundy-700 mt-1"></i>
+                <span class="editable-text" data-key="c2-benefit-5">Ưu tiên đổi trả 1-1 tận nhà nếu không vừa size</span>
+              </li>
+            </ul>
+          </div>
+
+          <button onclick="selectPackage('Gói 2: BEST SELLER - Nàng Thơ Kiêu Kỳ (2 Váy + Quà 250k - 850.000đ)')" class="w-full bg-burgundy-700 hover:bg-burgundy-800 text-white font-bold py-4 rounded-full shadow-burgundy-glow hover:shadow-2xl transition duration-300 transform hover:scale-[1.02] flex items-center justify-center space-x-2">
+            <span>SỞ HỮU COMBO NÀY NGAY</span>
+            <i class="fa-solid fa-arrow-right text-gold-400"></i>
+          </button>
+        </div>
+
+        <!-- Combo 3 -->
+        <div class="bg-white rounded-3xl p-6 lg:p-8 border border-pastel-200 shadow-sm flex flex-col justify-between hover:shadow-lg transition duration-300">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-charcoal-800/60 block mb-1 editable-text" data-key="c3-tag">SET TOÀN DIỆN</span>
+            <h3 class="font-serif text-2xl font-bold text-burgundy-900 mb-2 editable-text" data-key="c3-name">Nữ Hoàng Đêm Tiệc</h3>
+            <p class="text-xs text-charcoal-800/80 mb-4 editable-text" data-key="c3-desc">03 Món Thiết Kế Cao Cấp + Full Phụ Kiện Lụa</p>
+            
+            <div class="flex items-baseline space-x-3 mb-6 pb-6 border-b border-pastel-200">
+              <span class="font-serif text-3xl sm:text-4xl font-black text-burgundy-700 editable-text" data-key="c3-price">1.190.000đ</span>
+              <span class="text-sm line-through text-gray-400 editable-text" data-key="c3-oldprice">2.380.000đ</span>
+              <span class="bg-pastel-200 text-burgundy-800 text-[11px] font-bold px-2 py-0.5 rounded editable-text" data-key="c3-discount">-50%</span>
+            </div>
+
+            <ul class="space-y-3 text-xs sm:text-sm text-charcoal-800/90 mb-8">
+              <li class="flex items-start space-x-2">
+                <i class="fa-solid fa-circle-check text-burgundy-700 mt-1"></i>
+                <span class="editable-text" data-key="c3-benefit-1">Trọn vẹn 3 phong cách: Đi làm, Đi chơi, Đi tiệc</span>
+              </li>
+              <li class="flex items-start space-x-2">
+                <i class="fa-solid fa-gift text-gold-500 mt-1"></i>
+                <span class="editable-text" data-key="c3-benefit-2">Tặng Set Khăn Lụa & Kẹp Tóc Pha Lê Ánh Kim</span>
+              </li>
+              <li class="flex items-start space-x-2">
+                <i class="fa-solid fa-truck-fast text-burgundy-700 mt-1"></i>
+                <span class="editable-text" data-key="c3-benefit-3">Freeship hỏa tốc + Hộp quà nhung đỏ cao cấp</span>
+              </li>
+              <li class="flex items-start space-x-2">
+                <i class="fa-solid fa-crown text-gold-500 mt-1"></i>
+                <span class="editable-text" data-key="c3-benefit-4">Nâng cấp Thẻ VIP Member giảm 10% trọn đời</span>
+              </li>
+            </ul>
+          </div>
+
+          <button onclick="selectPackage('Gói 3: Nữ Hoàng Đêm Tiệc (3 Món + Full Quà Tặng - 1.190.000đ)')" class="w-full bg-pastel-100 hover:bg-burgundy-700 hover:text-white text-burgundy-800 font-bold py-3.5 rounded-full transition duration-300 border border-burgundy-700/30">
+            CHỌN GÓI NÀY
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Quick Checkout / High Conversion Form -->
+      <div id="order-section" class="mt-16 max-w-2xl mx-auto bg-white rounded-3xl p-6 sm:p-10 border border-pastel-300 shadow-2xl relative">
+        <div class="text-center mb-6">
+          <span class="text-xs font-bold uppercase tracking-widest text-burgundy-700 bg-pastel-100 px-3.5 py-1 rounded-full border border-burgundy-600/20 editable-text" data-key="order-eyebrow">
+            ĐẶT HÀNG NHANH CHÓNG TRONG 30 GIÂY
+          </span>
+          <h3 class="font-serif text-2xl sm:text-3xl font-bold text-burgundy-900 mt-2 editable-text" data-key="order-heading">
+            Điền Thông Tin Để Giữ Ưu Đãi 45% & Quà Tặng
+          </h3>
+          <p class="text-xs sm:text-sm text-charcoal-800/80 mt-1 editable-text" data-key="order-desc">
+            Chuyên viên tư vấn Mơ Store sẽ gọi lại xác nhận số đo chuẩn xác trước khi đóng gói gửi đi.
+          </p>
+        </div>
+
+        <form id="order-form" onsubmit="handleOrderSubmit(event)" class="space-y-4">
+          <!-- Combo Selection -->
+          <div>
+            <label class="block text-xs font-bold text-charcoal-800 uppercase mb-1">Gói Ưu Đãi Nàng Chọn *</label>
+            <select id="selected-combo" class="w-full px-4 py-3 rounded-xl border border-pastel-300 focus:ring-2 focus:ring-burgundy-700 focus:outline-none text-sm font-medium bg-pastel-50/50">
+              <option value="Gói 2: BEST SELLER - Nàng Thơ Kiêu Kỳ (2 Váy + Quà 250k - 850.000đ)">⭐ [BEST SELLER] Combo Nàng Thơ Kiêu Kỳ (2 Váy + Quà Khăn Lụa - 850.000đ)</option>
+              <option value="Gói 1: Nàng Thơ Tinh Khôi (1 Món - 485.000đ)">Gói 1: Nàng Thơ Tinh Khôi (1 Món - 485.000đ)</option>
+              <option value="Gói 3: Nữ Hoàng Đêm Tiệc (3 Món + Full Quà Tặng - 1.190.000đ)">Gói 3: Nữ Hoàng Đêm Tiệc (3 Món + Full Quà Tặng - 1.190.000đ)</option>
+            </select>
+          </div>
+
+          <!-- Color & Size Selection -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold text-charcoal-800 uppercase mb-1">Màu Sắc Ưu Tiên *</label>
+              <select id="dress-color" class="w-full px-4 py-3 rounded-xl border border-pastel-300 focus:ring-2 focus:ring-burgundy-700 focus:outline-none text-sm font-medium">
+                <option value="Đỏ Đô Burgundy (Tôn da, quý phái)">Đỏ Đô Burgundy (Tôn da, quý phái)</option>
+                <option value="Hồng Pastel Dịu Ngọt (Nữ tính, trẻ trung)">Hồng Pastel Dịu Ngọt (Nữ tính, trẻ trung)</option>
+                <option value="Trắng Kem Ngọc Trai (Thanh khiết, tiểu thư)">Trắng Kem Ngọc Trai (Thanh khiết, tiểu thư)</option>
+                <option value="Phối 2 màu khác nhau (Nhân viên sẽ gọi tư vấn)">Phối 2 màu khác nhau (Nhân viên tư vấn)</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-charcoal-800 uppercase mb-1">Cân Nặng / Size Nàng *</label>
+              <select id="dress-size" class="w-full px-4 py-3 rounded-xl border border-pastel-300 focus:ring-2 focus:ring-burgundy-700 focus:outline-none text-sm font-medium">
+                <option value="Size S (42kg - 48kg)">Size S (42kg - 48kg)</option>
+                <option value="Size M (49kg - 54kg)">Size M (49kg - 54kg)</option>
+                <option value="Size L (55kg - 60kg)">Size L (55kg - 60kg)</option>
+                <option value="Size XL (61kg - 66kg)">Size XL (61kg - 66kg)</option>
+                <option value="Chưa rõ size - Cần Stylist tư vấn số đo">Chưa rõ size - Cần Stylist gọi tư vấn</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Full Name -->
+          <div>
+            <label class="block text-xs font-bold text-charcoal-800 uppercase mb-1">Họ Và Tên Của Nàng *</label>
+            <input type="text" id="cust-name" required placeholder="Ví dụ: Nguyễn Phương Linh" class="w-full px-4 py-3 rounded-xl border border-pastel-300 focus:ring-2 focus:ring-burgundy-700 focus:outline-none text-sm">
+          </div>
+
+          <!-- Phone Number -->
+          <div>
+            <label class="block text-xs font-bold text-charcoal-800 uppercase mb-1">Số Điện Thoại Nhận Hàng *</label>
+            <input type="tel" id="cust-phone" required pattern="[0-9]{10,11}" placeholder="Ví dụ: 0369670374" class="w-full px-4 py-3 rounded-xl border border-pastel-300 focus:ring-2 focus:ring-burgundy-700 focus:outline-none text-sm">
+          </div>
+
+          <!-- Address -->
+          <div>
+            <label class="block text-xs font-bold text-charcoal-800 uppercase mb-1">Địa Chỉ Nhận Hàng (Số nhà, Đường, Phường/Xã, Tỉnh/TP) *</label>
+            <input type="text" id="cust-address" required placeholder="Ví dụ: 16/4 Xa Tổ 3, Tam Hiệp, Đồng Nai" class="w-full px-4 py-3 rounded-xl border border-pastel-300 focus:ring-2 focus:ring-burgundy-700 focus:outline-none text-sm">
+          </div>
+
+          <!-- Reassurance micro-copy -->
+          <div class="bg-pastel-100 p-3.5 rounded-xl text-xs text-charcoal-800/90 space-y-1 border border-pastel-200">
+            <div class="flex items-center space-x-2 text-burgundy-800 font-semibold">
+              <i class="fa-solid fa-shield-heart text-burgundy-700"></i>
+              <span>Cam Kết Tuyệt Đối An Tâm Mua Sắm:</span>
+            </div>
+            <p>✔ Không cần đặt cọc trước bất kỳ chi phí nào.</p>
+            <p>✔ Nàng được mở hộp, sờ chất vải, kiểm tra đúng mẫu mới thanh toán cho shipper.</p>
+          </div>
+
+          <!-- Main Submit Button -->
+          <button type="submit" class="w-full bg-burgundy-700 hover:bg-burgundy-800 text-white font-bold text-lg py-4 rounded-full shadow-burgundy-glow hover:shadow-2xl transition duration-300 transform hover:-translate-y-0.5 flex items-center justify-center space-x-2">
+            <i class="fa-solid fa-lock text-gold-400"></i>
+            <span class="editable-text" data-key="order-submit-btn">XÁC NHẬN ĐẶT HÀNG - GIỮ ƯU ĐÃI NGAY</span>
+          </button>
+        </form>
+
+        <!-- Order Success Message -->
+        <div id="order-success-msg" class="hidden text-center py-8">
+          <div class="w-16 h-16 bg-pastel-200 text-burgundy-700 rounded-full flex items-center justify-center mx-auto text-3xl mb-4 animate-bounce">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <h4 class="font-serif text-2xl font-bold text-burgundy-900">Chúc Mừng Nàng Đã Giữ Ưu Đãi Thành Công!</h4>
+          <p class="text-sm text-charcoal-800/90 mt-2 max-w-md mx-auto">
+            Mơ Store đã ghi nhận đơn hàng của <strong id="success-cust-name" class="text-burgundy-800"></strong>. Chuyên viên Stylist tại showroom sẽ liên hệ qua số điện thoại để hỗ trợ nàng sớm nhất nhé!
+          </p>
+          <div class="mt-4 p-3 bg-pastel-100 rounded-xl text-xs text-burgundy-800 max-w-md mx-auto">
+            Hotline hỗ trợ gấp: <a href="tel:0369670374" class="font-bold underline store-phone">0369670374</a> (Showroom Tam Hiệp, Đồng Nai)
+          </div>
+          <button onclick="resetOrderForm()" class="mt-6 inline-block bg-burgundy-700 text-white text-xs font-bold px-6 py-2.5 rounded-full shadow">
+            Đặt thêm sản phẩm khác
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================================================= -->
+  <!-- KHỐI 5: FOOTER & TRUST (CUNG CẤP SỰ AN TÂM & BẢO HÀNH)                     -->
+  <!-- ========================================================================= -->
+  <footer id="footer-trust" class="bg-charcoal-900 text-pastel-100 pt-16 pb-12 relative border-t-4 border-burgundy-700">
+    <div class="container mx-auto px-4 lg:px-8">
+      
+      <!-- 4 Core Trust Guarantees Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pb-12 border-b border-white/10">
+        
+        <div class="flex items-start space-x-4">
+          <div class="w-12 h-12 rounded-2xl bg-burgundy-800 flex items-center justify-center text-gold-400 text-xl flex-shrink-0">
+            <i class="fa-solid fa-arrows-rotate"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-white text-sm editable-text" data-key="trust-1-title">Đổi Trả 7 Ngày Tận Nơi</h4>
+            <p class="text-xs text-pastel-200/70 mt-1 leading-relaxed editable-text" data-key="trust-1-desc">Không vừa size hoặc chưa ưng ý? Mơ Store đổi mới tận nhà hoàn toàn miễn phí.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start space-x-4">
+          <div class="w-12 h-12 rounded-2xl bg-burgundy-800 flex items-center justify-center text-gold-400 text-xl flex-shrink-0">
+            <i class="fa-solid fa-box-open"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-white text-sm editable-text" data-key="trust-2-title">100% Đồng Kiểm Trước</h4>
+            <p class="text-xs text-pastel-200/70 mt-1 leading-relaxed editable-text" data-key="trust-2-desc">Mở hàng ngắm nghía, sờ chất vải đúng mô tả mới thanh toán tiền cho bưu tá.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start space-x-4">
+          <div class="w-12 h-12 rounded-2xl bg-burgundy-800 flex items-center justify-center text-gold-400 text-xl flex-shrink-0">
+            <i class="fa-solid fa-scissors"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-white text-sm editable-text" data-key="trust-3-title">Bảo Hành Phom Dáng Trọn Đời</h4>
+            <p class="text-xs text-pastel-200/70 mt-1 leading-relaxed editable-text" data-key="trust-3-desc">Hỗ trợ bóp eo, lên gấu váy miễn phí trọn đời theo số đo vóc dáng nàng.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start space-x-4">
+          <div class="w-12 h-12 rounded-2xl bg-burgundy-800 flex items-center justify-center text-gold-400 text-xl flex-shrink-0">
+            <i class="fa-solid fa-headset"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-white text-sm editable-text" data-key="trust-4-title">Stylist Đồng Hành 24/7</h4>
+            <p class="text-xs text-pastel-200/70 mt-1 leading-relaxed editable-text" data-key="trust-4-desc">Đội ngũ stylist tận tâm hỗ trợ phối đồ, chọn phụ kiện cho mọi dịp lễ tiệc.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Main Footer Links & Info -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 py-12 border-b border-white/10">
+        
+        <!-- Brand Intro -->
+        <div class="lg:col-span-5 space-y-4">
+          <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 rounded-full bg-burgundy-700 flex items-center justify-center text-white overflow-hidden">
+              <img src="logo.jpg" alt="Logo Mơ Store" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="w-full h-full hidden items-center justify-center">
+                <i class="fa-solid fa-feather-pointed"></i>
+              </div>
+            </div>
+            <div>
+              <span class="font-serif text-2xl font-bold text-white block leading-none editable-text" data-key="footer-brand-name">Mơ Store</span>
+              <span class="text-[9px] uppercase tracking-[0.2em] text-pastel-300">Thời Trang Thiết Kế Nữ Cao Cấp</span>
+            </div>
+          </div>
+          <p class="text-xs text-pastel-200/80 leading-relaxed max-w-md">
+            Slogan: <strong class="text-white store-slogan editable-text" data-key="footer-slogan">“Mỗi bộ đồ là một câu chuyện.”</strong>
+          </p>
+          <p class="text-xs text-pastel-200/80 leading-relaxed max-w-md editable-text" data-key="footer-brand-desc">
+            Mơ Store ra đời với sứ mệnh tôn vinh nét thơ dịu dàng nhưng kiêu hãnh của người phụ nữ hiện đại. Để mỗi trang phục nàng khoác lên mình không chỉ tôn trọn đường cong, mà còn là bản tuyên ngôn tình yêu với chính bản thân.
+          </p>
+          <div class="flex space-x-3 text-sm pt-1">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full bg-white/10 hover:bg-burgundy-700 flex items-center justify-center transition" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full bg-white/10 hover:bg-burgundy-700 flex items-center justify-center transition" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full bg-white/10 hover:bg-burgundy-700 flex items-center justify-center transition" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://zalo.me/0369670374" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full bg-white/10 hover:bg-burgundy-700 flex items-center justify-center transition store-zalo-link" aria-label="Zalo"><i class="fa-solid fa-comment-dots"></i></a>
+          </div>
+        </div>
+
+        <!-- Store Address & Hotline -->
+        <div class="lg:col-span-4 space-y-3">
+          <h4 class="font-serif text-base font-bold text-white tracking-wide border-l-2 border-burgundy-600 pl-3">
+            ĐỊA CHỈ SHOWROOM & LIÊN HỆ
+          </h4>
+          <ul class="text-xs text-pastel-200/80 space-y-3">
+            <li class="flex items-start space-x-2">
+              <i class="fa-solid fa-location-dot text-burgundy-500 mt-1 flex-shrink-0 text-sm"></i>
+              <span><strong>Địa chỉ cửa hàng:</strong> <span class="store-address editable-text" data-key="store-address">16/4 Xa Tổ 3, Tam Hiệp, Đồng Nai.</span></span>
+            </li>
+            <li class="flex items-start space-x-2">
+              <i class="fa-solid fa-phone-volume text-burgundy-500 mt-1 flex-shrink-0 text-sm"></i>
+              <span><strong>Hotline Đặt Hàng & Tư Vấn:</strong> <a href="tel:0369670374" class="text-gold-400 font-bold hover:underline store-phone">0369670374</a> (Hỗ trợ 24/7)</span>
+            </li>
+            <li class="flex items-start space-x-2">
+              <i class="fa-solid fa-clock text-burgundy-500 mt-1 flex-shrink-0 text-sm"></i>
+              <span><strong>Giờ mở cửa:</strong> <span class="editable-text" data-key="store-hours">08:30 - 21:30 (Mở cửa tất cả các ngày trong tuần)</span></span>
+            </li>
+            <li class="flex items-start space-x-2">
+              <i class="fa-solid fa-envelope text-burgundy-500 mt-1 flex-shrink-0 text-sm"></i>
+              <span><strong>Email hỗ trợ:</strong> <span class="editable-text" data-key="store-email">contact@mostore.vn</span></span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Policies & Quick Navigation -->
+        <div class="lg:col-span-3 space-y-3">
+          <h4 class="font-serif text-base font-bold text-white tracking-wide border-l-2 border-burgundy-600 pl-3">
+            CHÍNH SÁCH BÁN HÀNG
+          </h4>
+          <ul class="text-xs text-pastel-200/80 space-y-2">
+            <li><a href="#footer-trust" class="hover:text-gold-400 transition">Chính sách vận chuyển hỏa tốc</a></li>
+            <li><a href="#footer-trust" class="hover:text-gold-400 transition">Quy trình đổi trả miễn phí 7 ngày</a></li>
+            <li><a href="#footer-trust" class="hover:text-gold-400 transition">Hướng dẫn bảo quản lụa & đầm dạ tiệc</a></li>
+            <li><a href="#footer-trust" class="hover:text-gold-400 transition">Chính sách bảo mật thông tin khách hàng</a></li>
+          </ul>
+          
+          <div class="pt-2 space-y-2">
+            <div class="inline-block border border-white/20 rounded px-2.5 py-1 text-[10px] text-pastel-300 font-mono">
+              ✓ ĐÃ ĐĂNG KÝ BỘ CÔNG THƯƠNG
+            </div>
+            <div class="block text-[10px] text-pastel-300">
+              <i class="fa-solid fa-lock text-gold-400 mr-1"></i> Bảo Mật Dữ Liệu SSL 256-BIT
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Copyright & Bottom Note -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-pastel-200/60 text-center sm:text-left gap-4">
+        <p>© 2026 Mơ Store. Bản quyền thuộc về Mơ Store (<span class="store-address">16/4 Xa Tổ 3, Tam Hiệp, Đồng Nai</span>). Hotline: <span class="store-phone">0369670374</span>.</p>
+        <p class="italic font-serif text-pastel-300 text-sm store-slogan">“Mỗi bộ đồ là một câu chuyện.”</p>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- ================= FLOATING STICKY CTA BAR (MOBILE ONLY) ================= -->
+  <div class="fixed bottom-0 left-0 right-0 z-30 bg-white/95 backdrop-blur-md border-t border-pastel-300 p-3 sm:hidden shadow-2xl flex items-center justify-between gap-3">
+    <div>
+      <span class="text-[10px] text-gray-500 uppercase block font-semibold">Ưu Đãi Flash Sale</span>
+      <span class="text-base font-serif font-black text-burgundy-700 leading-none">Giảm Đến 45%</span>
+    </div>
+    <a href="#offers" class="bg-burgundy-700 hover:bg-burgundy-800 text-white font-bold text-xs uppercase px-5 py-2.5 rounded-full shadow-md flex items-center space-x-1.5 animate-pulse">
+      <i class="fa-solid fa-gift text-gold-400"></i>
+      <span>SĂN DEAL NGAY</span>
+    </a>
+  </div>
+
+  <!-- ================= STICKY CONTACT BUTTONS (HOTLINE & ZALO) ================= -->
+  <div class="fixed bottom-16 sm:bottom-6 right-4 z-30 flex flex-col space-y-3">
+    <a href="tel:0369670374" class="w-12 h-12 rounded-full bg-burgundy-700 hover:bg-burgundy-800 text-white flex items-center justify-center shadow-lg shadow-burgundy-700/40 transform hover:scale-110 transition duration-300 group store-phone-link" title="Gọi Hotline: 0369670374">
+      <i class="fa-solid fa-phone text-lg animate-bounce"></i>
+    </a>
+    <a href="https://zalo.me/0369670374" target="_blank" rel="noopener noreferrer" class="w-12 h-12 rounded-full bg-blue-600 hover:bg-blue-700 text-white flex items-center justify-center shadow-lg transform hover:scale-110 transition duration-300 group store-zalo-link" title="Chat Zalo: 0369670374">
+      <i class="fa-solid fa-comment-dots text-lg"></i>
+    </a>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- TOAST THÔNG BÁO BÊN TRÁI: CỨ 30 GIÂY HIỂN THỊ NGƯỜI MUA TÊN THẬT (FOMO)   -->
+  <!-- ========================================================================= -->
+  <aside id="live-notification" aria-label="Thông báo đơn hàng mới" class="fixed bottom-6 left-4 sm:bottom-8 sm:left-6 z-40 bg-white/95 backdrop-blur-md rounded-2xl shadow-toast border-2 border-burgundy-600/30 p-3.5 flex items-center space-x-3.5 max-w-[340px] sm:max-w-sm transition-all duration-700 ease-out transform -translate-x-[150%] opacity-0 pointer-events-none">
+    
+    <!-- Avatar khách hàng thật -->
+    <div class="relative flex-shrink-0">
+      <img id="notif-avatar" src="avatar.jpg" alt="Khách hàng vừa mua" class="w-12 h-12 rounded-full object-cover ring-2 ring-burgundy-700 shadow" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80'">
+      <span class="absolute -bottom-1 -right-1 w-4 h-4 bg-emerald-500 border-2 border-white rounded-full flex items-center justify-center text-[8px] text-white" title="Đã xác thực">
+        ✓
+      </span>
+    </div>
+
+    <!-- Thông tin chi tiết khách hàng -->
+    <div class="text-xs flex-1 pr-2 min-w-0">
+      <!-- Tag huy hiệu xác nhận -->
+      <div class="flex items-center space-x-1.5 mb-0.5">
+        <span class="bg-burgundy-100 text-burgundy-800 text-[10px] font-bold px-1.5 py-0.2 rounded flex items-center space-x-1">
+          <i class="fa-solid fa-bag-shopping text-[9px] text-burgundy-700"></i>
+          <span>ĐƠN HÀNG MỚI</span>
+        </span>
+        <span id="notif-phone" class="text-[10px] text-gray-400 font-mono">098***452</span>
+      </div>
+
+      <!-- Tên người mua thật -->
+      <p class="text-charcoal-900 leading-tight font-medium">
+        <strong id="notif-name" class="text-burgundy-900 font-bold">Chị Nguyễn Hoàng Mai</strong> vừa đặt mua
+      </p>
+
+      <!-- Tên sản phẩm đã mua -->
+      <p id="notif-item" class="text-burgundy-700 font-semibold text-[11px] truncate mt-0.5" title="Sản phẩm đã chọn">
+        Đầm Dạ Hội Lụa Rosé Scarlet
+      </p>
+
+      <!-- Địa chỉ và thời gian thực -->
+      <div class="flex items-center space-x-1 text-[10px] text-gray-500 mt-0.5">
+        <i class="fa-solid fa-location-dot text-burgundy-600 text-[9px]"></i>
+        <span id="notif-location" class="truncate font-medium">Tam Hiệp, Đồng Nai</span>
+        <span>•</span>
+        <span id="notif-time" class="text-gray-400 whitespace-nowrap">Vừa xong (1 phút trước)</span>
+      </div>
+    </div>
+
+    <!-- Nút đóng nhanh toast -->
+    <button onclick="dismissNotification()" class="text-gray-400 hover:text-burgundy-800 p-1 self-start -mr-1 text-sm focus:outline-none" aria-label="Đóng thông báo">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  </aside>
+
+
+  <!-- ========================================================================= -->
+  <!-- MODAL BẢNG QUẢN TRỊ CÀI ĐẶT NHANH (QUICK SETTINGS DRAWER / MODAL)          -->
+  <!-- ========================================================================= -->
+  <div id="settings-modal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border-2 border-gold-500/50 p-6 sm:p-8 relative">
+      
+      <!-- Close Button -->
+      <button onclick="closeSettingsModal()" class="absolute top-5 right-5 text-gray-400 hover:text-burgundy-800 text-2xl" aria-label="Đóng">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="text-center mb-6 border-b border-pastel-200 pb-4">
+        <div class="w-12 h-12 rounded-full bg-burgundy-100 text-burgundy-700 flex items-center justify-center mx-auto text-xl mb-2">
+          <i class="fa-solid fa-sliders"></i>
+        </div>
+        <h3 class="font-serif text-2xl font-bold text-burgundy-900">Bảng Sửa Nhanh Thông Tin Mơ Store</h3>
+        <p class="text-xs text-charcoal-800/70 mt-1">Thay đổi các thông tin quan trọng dưới đây và bấm "Áp Dụng & Lưu Lại" là xong!</p>
+      </div>
+
+      <form id="quick-settings-form" onsubmit="handleApplyQuickSettings(event)" class="space-y-4 text-xs">
+        
+        <!-- Slogan & Brand -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block font-bold text-charcoal-800 uppercase mb-1">Tên Thương Hiệu</label>
+            <input type="text" id="cfg-brand" class="w-full px-3 py-2.5 rounded-xl border border-pastel-300 focus:ring-2 focus:ring-burgundy-700 focus:outline-none" value="Mơ Store">
+          </div>
+          <div>
+            <label class="block font-bold text-charcoal-800 uppercase mb-1">Slogan Thương Hiệu</label>
+            <input type="text" id="cfg-slogan" class="w-full px-3 py-2.5 rounded-xl border border-pastel-300 focus:ring-2 focus:ring-burgundy-700 focus:outline-none" value="“Mỗi bộ đồ là một câu chuyện.”">
+          </div>
+        </div>
+
+        <!-- Phone & Address -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block font-bold text-charcoal-800 uppercase mb-1">Hotline / Số Zalo</label>
+            <input type="text" id="cfg-phone" class="w-full px-3 py-2.5 rounded-xl border border-pastel-300 focus:ring-2 focus:ring-burgundy-700 focus:outline-none" value="0369670374">
+          </div>
+          <div>
+            <label class="block font-bold text-charcoal-800 uppercase mb-1">Giờ Mở Cửa</label>
+            <input type="text" id="cfg-hours" class="w-full px-3 py-2.5 rounded-xl border border-pastel-300 focus:ring-2 focus:ring-burgundy-700 focus:outline-none" value="08:30 - 21:30 (Mở cửa tất cả các ngày trong tuần)">
+          </div>
+        </div>
+
+        <div>
+          <label class="block font-bold text-charcoal-800 uppercase mb-1">Địa Chỉ Showroom</label>
+          <input type="text" id="cfg-address" class="w-full px-3 py-2.5 rounded-xl border border-pastel-300 focus:ring-2 focus:ring-burgundy-700 focus:outline-none" value="16/4 Xa Tổ 3, Tam Hiệp, Đồng Nai.">
+        </div>
+
+        <!-- Cài đặt Toast Thông báo bên trái -->
+        <div class="border-t border-pastel-200 pt-4 bg-pastel-50 p-3.5 rounded-2xl border">
+          <div class="flex items-center justify-between mb-2">
+            <h4 class="font-bold text-burgundy-800 uppercase text-[11px] flex items-center space-x-1.5">
+              <i class="fa-solid fa-bell text-gold-500"></i>
+              <span>Cài Đặt Toast Thông Báo Bên Trái (Cứ 30s)</span>
+            </h4>
+            <button type="button" onclick="showNextNotification()" class="bg-burgundy-700 text-white font-bold px-2.5 py-1 rounded-lg text-[10px] hover:bg-burgundy-800">
+              Thử Hiện Toast Ngay
+            </button>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div>
+              <label class="block font-semibold text-gray-700 mb-1">Thời Gian Lặp Lại (Giây)</label>
+              <input type="number" id="cfg-toast-seconds" min="10" max="180" class="w-full px-2.5 py-1.5 rounded-lg border border-pastel-300 text-xs font-bold text-burgundy-700" value="30">
+              <span class="text-[10px] text-gray-500">Mặc định: 30 giây hiển thị 1 lần người mua thật</span>
+            </div>
+            <div>
+              <label class="block font-semibold text-gray-700 mb-1">Trạng Thái Bật/Tắt Toast</label>
+              <select id="cfg-toast-enable" class="w-full px-2.5 py-1.5 rounded-lg border border-pastel-300 text-xs font-bold text-burgundy-700">
+                <option value="true">BẬT (Tự động hiển thị mỗi 30s)</option>
+                <option value="false">TẮT (Ẩn thông báo)</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Prices -->
+        <div class="border-t border-pastel-200 pt-4">
+          <h4 class="font-bold text-burgundy-800 uppercase text-[11px] mb-3">Điều Chỉnh Giá 3 Gói Ưu Đãi (Combo)</h4>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <div class="bg-pastel-50 p-3 rounded-xl border border-pastel-200">
+              <label class="block font-semibold text-gray-700 mb-1">Gói 1 (Trải Nghiệm)</label>
+              <input type="text" id="cfg-p1" class="w-full px-2.5 py-1.5 rounded-lg border border-pastel-300 text-xs font-bold text-burgundy-700" value="485.000đ">
+            </div>
+            <div class="bg-burgundy-50 p-3 rounded-xl border border-burgundy-300">
+              <label class="block font-bold text-burgundy-900 mb-1">Gói 2 (Best Seller)</label>
+              <input type="text" id="cfg-p2" class="w-full px-2.5 py-1.5 rounded-lg border border-burgundy-400 text-xs font-bold text-burgundy-700" value="850.000đ">
+            </div>
+            <div class="bg-pastel-50 p-3 rounded-xl border border-pastel-200">
+              <label class="block font-semibold text-gray-700 mb-1">Gói 3 (Nữ Hoàng)</label>
+              <input type="text" id="cfg-p3" class="w-full px-2.5 py-1.5 rounded-lg border border-pastel-300 text-xs font-bold text-burgundy-700" value="1.190.000đ">
+            </div>
+          </div>
+        </div>
+
+        <!-- Banner image url -->
+        <div>
+          <label class="block font-bold text-charcoal-800 uppercase mb-1">Link Ảnh Banner Chính (Hero Image URL)</label>
+          <input type="url" id="cfg-hero-img" class="w-full px-3 py-2 rounded-xl border border-pastel-300 focus:ring-2 focus:ring-burgundy-700 focus:outline-none" value="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=800&q=85">
+        </div>
+
+        <!-- Action Buttons inside Modal -->
+        <div class="pt-4 border-t border-pastel-200 flex flex-col sm:flex-row items-center justify-end gap-3">
+          <button type="button" onclick="closeSettingsModal()" class="w-full sm:w-auto px-5 py-2.5 rounded-full border border-gray-300 text-gray-700 font-bold hover:bg-gray-100 transition">
+            Hủy Bỏ
+          </button>
+          <button type="submit" class="w-full sm:w-auto px-6 py-2.5 rounded-full bg-burgundy-700 hover:bg-burgundy-800 text-white font-bold shadow-md shadow-burgundy-700/20 transition flex items-center justify-center space-x-1.5">
+            <i class="fa-solid fa-check text-gold-400"></i>
+            <span>Áp Dụng & Cập Nhật Trang Ngay</span>
+          </button>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+
+
+  <!-- ========================================================================= -->
+  <!-- JAVASCRIPT: LOGIC TƯƠNG TÁC + TOAST 30S NGƯỜI MUA THẬT + EDIT CMS         -->
+  <!-- ========================================================================= -->
+  <script>
+    // ===================================================================
+    // 1. DANH SÁCH NGƯỜI MUA TÊN THẬT & TOAST THÔNG BÁO BÊN TRÁI MỖI 30 GIÂY
+    // ===================================================================
+    const realBuyersList = [
+      {
+        name: "Chị Nguyễn Hoàng Mai",
+        phone: "098***452",
+        location: "Tam Hiệp, Đồng Nai",
+        item: "Đầm Dạ Hội Lụa Rosé Scarlet (Đỏ Đô)",
+        time: "Vừa xong (1 phút trước)",
+        avatar: "avatar.jpg"
+      },
+      {
+        name: "Nàng Trần Thu Phương",
+        phone: "093***816",
+        location: "Biên Hòa, Đồng Nai",
+        item: "Combo Nàng Thơ Kiêu Kỳ (2 Váy + Quà Khăn Lụa)",
+        time: "2 phút trước",
+        avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80"
+      },
+      {
+        name: "Chị Lê Thị Bích Ngọc",
+        phone: "091***639",
+        location: "Long Thành, Đồng Nai",
+        item: "Đầm Nàng Thơ Sweet Petal (Hồng Dịu Dàng)",
+        time: "3 phút trước",
+        avatar: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=120&q=80"
+      },
+      {
+        name: "Nàng Đặng Vũ Diễm Quỳnh",
+        phone: "097***349",
+        location: "Quận 1, TP. Hồ Chí Minh",
+        item: "Áo Kiểu Lụa Nơ Cổ Camellia (Trắng Kem)",
+        time: "5 phút trước",
+        avatar: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=120&q=80"
+      },
+      {
+        name: "Chị Phạm Khánh Linh",
+        phone: "036***574",
+        location: "Trảng Bom, Đồng Nai",
+        item: "Set Nữ Hoàng Đêm Tiệc (3 Món + Full Quà Tặng)",
+        time: "6 phút trước",
+        avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=120&q=80"
+      },
+      {
+        name: "Nàng Đỗ Thanh Hằng",
+        phone: "090***928",
+        location: "Cầu Giấy, Hà Nội",
+        item: "Quần Tây Ống Suông Lưng Cao Hack Dáng",
+        time: "7 phút trước",
+        avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&q=80"
+      },
+      {
+        name: "Chị Vũ Thùy Chi",
+        phone: "096***215",
+        location: "Tân Phong, Biên Hòa",
+        item: "Đầm Dạ Hội Lụa Rượu Vang Rosé",
+        time: "8 phút trước",
+        avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80"
+      },
+      {
+        name: "Nàng Bùi Mai Anh",
+        phone: "098***774",
+        location: "Thủ Đức, TP. Hồ Chí Minh",
+        item: "Combo Nàng Thơ Kiêu Kỳ (2 Váy)",
+        time: "11 phút trước",
+        avatar: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=120&q=80"
+      }
+    ];
+
+    let notifIndex = 0;
+    let toastIntervalTime = 30000; // Đúng 30 giây hiển thị một lần theo yêu cầu
+    let toastTimer = null;
+    let toastDismissTimer = null;
+    let isToastEnabled = true;
+
+    const notifBox = document.getElementById('live-notification');
+    const notifName = document.getElementById('notif-name');
+    const notifPhone = document.getElementById('notif-phone');
+    const notifItem = document.getElementById('notif-item');
+    const notifLocation = document.getElementById('notif-location');
+    const notifTime = document.getElementById('notif-time');
+    const notifAvatar = document.getElementById('notif-avatar');
+
+    function showNextNotification() {
+      if (!notifBox || !isToastEnabled) return;
+      const data = realBuyersList[notifIndex % realBuyersList.length];
+
+      // Đổ dữ liệu người mua thật
+      notifName.textContent = data.name;
+      if (notifPhone) notifPhone.textContent = data.phone;
+      notifItem.textContent = data.item;
+      if (notifLocation) notifLocation.textContent = data.location;
+      if (notifTime) notifTime.textContent = data.time;
+      if (notifAvatar) {
+        notifAvatar.src = data.avatar;
+        notifAvatar.onerror = function() {
+          this.src = "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80";
+        };
+      }
+
+      // Xóa timer ẩn cũ nếu có
+      if (toastDismissTimer) clearTimeout(toastDismissTimer);
+
+      // Hiệu ứng trượt vào mượt mà từ bên trái
+      notifBox.classList.remove('-translate-x-[150%]', 'opacity-0', 'pointer-events-none');
+      notifBox.classList.add('translate-x-0', 'opacity-100', 'pointer-events-auto');
+
+      // Tự động trượt ra sau 6 giây để khách đọc thoải mái
+      toastDismissTimer = setTimeout(() => {
+        dismissNotification();
+      }, 6000);
+
+      notifIndex++;
+    }
+
+    function dismissNotification() {
+      if (!notifBox) return;
+      // Trượt trở lại ra ngoài bên trái
+      notifBox.classList.remove('translate-x-0', 'opacity-100', 'pointer-events-auto');
+      notifBox.classList.add('-translate-x-[150%]', 'opacity-0', 'pointer-events-none');
+    }
+
+    function startToastInterval() {
+      if (toastTimer) clearInterval(toastTimer);
+      if (!isToastEnabled) return;
+
+      // Lần đầu xuất hiện sau 3 giây để khách vào trang thấy ngay
+      setTimeout(() => {
+        showNextNotification();
+        // Sau đó cứ đúng 30 giây lặp lại 1 lần
+        toastTimer = setInterval(showNextNotification, toastIntervalTime);
+      }, 3000);
+    }
+
+    // ===================================================================
+    // 2. CHẾ ĐỘ CHỈNH SỬA TRỰC TIẾP (LIVE IN-PLACE EDIT MODE)
+    // ===================================================================
+    let isEditMode = false;
+
+    function toggleEditMode() {
+      isEditMode = !isEditMode;
+      const statusBadge = document.getElementById('edit-mode-status');
+      const toggleBtnText = document.getElementById('toggle-btn-text');
+      const toggleBtn = document.getElementById('toggle-edit-btn');
+      const editables = document.querySelectorAll('.editable-text');
+      const editableImgs = document.querySelectorAll('.editable-img');
+
+      if (isEditMode) {
+        document.body.classList.add('is-edit-mode');
+        statusBadge.textContent = "Đang Chỉnh Sửa ✏️";
+        statusBadge.className = "bg-amber-500 text-charcoal-900 font-black px-2 py-0.5 rounded text-[11px] animate-pulse";
+        toggleBtnText.textContent = "Tắt Chế Độ Sửa (Xem Thử)";
+        toggleBtn.className = "bg-amber-600 hover:bg-amber-700 text-white font-bold px-3 py-1.5 rounded-lg shadow flex items-center space-x-1.5 transition";
+
+        editables.forEach(el => {
+          el.setAttribute('contenteditable', 'true');
+        });
+
+        editableImgs.forEach(img => {
+          img.setAttribute('title', 'Nhấp chuột vào ảnh để đổi link hình ảnh mới!');
+          img.onclick = function(e) {
+            if (!isEditMode) return;
+            e.preventDefault();
+            const currentSrc = this.getAttribute('src');
+            const newSrc = prompt('Nhập đường dẫn (URL) hình ảnh mới:', currentSrc);
+            if (newSrc && newSrc.trim() !== '') {
+              this.setAttribute('src', newSrc.trim());
+              saveChangesSilently();
+            }
+          };
+        });
+
+        showAdminToast('Đã BẬT chế độ chỉnh sửa! Nhấp vào bất kỳ đoạn chữ nào để gõ sửa, hoặc nhấp vào ảnh để đổi ảnh mới.');
+      } else {
+        document.body.classList.remove('is-edit-mode');
+        statusBadge.textContent = "Xem Trước (Khách)";
+        statusBadge.className = "bg-burgundy-800 text-gold-400 font-bold px-2 py-0.5 rounded text-[11px]";
+        toggleBtnText.textContent = "Bật Chỉnh Sửa Trực Tiếp";
+        toggleBtn.className = "bg-burgundy-700 hover:bg-burgundy-600 text-white font-bold px-3 py-1.5 rounded-lg shadow flex items-center space-x-1.5 transition";
+
+        editables.forEach(el => {
+          el.removeAttribute('contenteditable');
+        });
+
+        editableImgs.forEach(img => {
+          img.onclick = null;
+        });
+
+        showAdminToast('Đã TẮT chế độ chỉnh sửa. Bạn đang xem giao diện như khách hàng thật!');
+      }
+    }
+
+    // ===================================================================
+    // 3. LƯU THAY ĐỔI VÀO TRÌNH DUYỆT (LOCALSTORAGE)
+    // ===================================================================
+    const STORAGE_KEY = 'MO_STORE_SAVED_CONTENT_V2';
+
+    function saveChanges() {
+      const data = {};
+      document.querySelectorAll('.editable-text').forEach(el => {
+        const key = el.getAttribute('data-key');
+        if (key) data[key] = el.innerHTML;
+      });
+
+      const heroImg = document.getElementById('hero-main-img');
+      if (heroImg) data['hero-main-img-src'] = heroImg.getAttribute('src');
+
+      data['cfg-toast-seconds'] = toastIntervalTime / 1000;
+      data['cfg-toast-enable'] = isToastEnabled;
+
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+      showAdminToast('🎉 Đã lưu toàn bộ thay đổi thành công vào trình duyệt!');
+    }
+
+    function saveChangesSilently() {
+      const data = {};
+      document.querySelectorAll('.editable-text').forEach(el => {
+        const key = el.getAttribute('data-key');
+        if (key) data[key] = el.innerHTML;
+      });
+      const heroImg = document.getElementById('hero-main-img');
+      if (heroImg) data['hero-main-img-src'] = heroImg.getAttribute('src');
+      data['cfg-toast-seconds'] = toastIntervalTime / 1000;
+      data['cfg-toast-enable'] = isToastEnabled;
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+    }
+
+    function loadSavedContent() {
+      const saved = localStorage.getItem(STORAGE_KEY);
+      if (!saved) return;
+      try {
+        const data = JSON.parse(saved);
+        document.querySelectorAll('.editable-text').forEach(el => {
+          const key = el.getAttribute('data-key');
+          if (key && data[key] !== undefined) {
+            el.innerHTML = data[key];
+          }
+        });
+
+        if (data['hero-main-img-src']) {
+          const heroImg = document.getElementById('hero-main-img');
+          if (heroImg) heroImg.setAttribute('src', data['hero-main-img-src']);
+        }
+
+        if (data['cfg-toast-seconds']) {
+          toastIntervalTime = parseInt(data['cfg-toast-seconds']) * 1000;
+        }
+        if (data['cfg-toast-enable'] !== undefined) {
+          isToastEnabled = data['cfg-toast-enable'];
+        }
+      } catch (err) {
+        console.error('Lỗi khi tải dữ liệu lưu trữ:', err);
+      }
+    }
+
+    function resetDefaultTemplate() {
+      if (confirm('Bạn có chắc muốn khôi phục lại nội dung và hình ảnh gốc mặc định ban đầu không?')) {
+        localStorage.removeItem(STORAGE_KEY);
+        location.reload();
+      }
+    }
+
+    // ===================================================================
+    // 4. TẢI FILE HTML HOÀN CHỈNH ĐÃ SỬA VỀ MÁY (EXPORT CLEAN HTML)
+    // ===================================================================
+    function exportCleanHTML() {
+      saveChangesSilently();
+      const cloneDoc = document.documentElement.cloneNode(true);
+      cloneDoc.classList.remove('is-edit-mode');
+      const body = cloneDoc.querySelector('body');
+      if (body) body.classList.remove('is-edit-mode');
+
+      cloneDoc.querySelectorAll('[contenteditable]').forEach(el => {
+        el.removeAttribute('contenteditable');
+      });
+
+      const htmlContent = "<!DOCTYPE html>\n" + cloneDoc.outerHTML;
+      const blob = new Blob([htmlContent], { type: 'text/html;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'index.html';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+
+      showAdminToast('📥 Đã tải file index.html mới về máy của bạn thành công!');
+    }
+
+    // ===================================================================
+    // 5. BẢNG SỬA NHANH (QUICK SETTINGS MODAL)
+    // ===================================================================
+    const settingsModal = document.getElementById('settings-modal');
+
+    function openSettingsModal() {
+      const phoneEl = document.querySelector('.store-phone');
+      const addressEl = document.querySelector('.store-address');
+      const sloganEl = document.querySelector('.store-slogan');
+      const heroImg = document.getElementById('hero-main-img');
+      const p1El = document.querySelector('[data-key="c1-price"]');
+      const p2El = document.querySelector('[data-key="c2-price"]');
+      const p3El = document.querySelector('[data-key="c3-price"]');
+
+      if (phoneEl) document.getElementById('cfg-phone').value = phoneEl.textContent.trim();
+      if (addressEl) document.getElementById('cfg-address').value = addressEl.textContent.trim();
+      if (sloganEl) document.getElementById('cfg-slogan').value = sloganEl.textContent.trim();
+      if (heroImg) document.getElementById('cfg-hero-img').value = heroImg.getAttribute('src');
+      if (p1El) document.getElementById('cfg-p1').value = p1El.textContent.trim();
+      if (p2El) document.getElementById('cfg-p2').value = p2El.textContent.trim();
+      if (p3El) document.getElementById('cfg-p3').value = p3El.textContent.trim();
+
+      document.getElementById('cfg-toast-seconds').value = toastIntervalTime / 1000;
+      document.getElementById('cfg-toast-enable').value = isToastEnabled ? "true" : "false";
+
+      settingsModal.classList.remove('hidden');
+      settingsModal.classList.add('flex');
+    }
+
+    function closeSettingsModal() {
+      settingsModal.classList.add('hidden');
+      settingsModal.classList.remove('flex');
+    }
+
+    function handleApplyQuickSettings(e) {
+      e.preventDefault();
+      const phone = document.getElementById('cfg-phone').value.trim();
+      const address = document.getElementById('cfg-address').value.trim();
+      const slogan = document.getElementById('cfg-slogan').value.trim();
+      const heroImgUrl = document.getElementById('cfg-hero-img').value.trim();
+      const p1 = document.getElementById('cfg-p1').value.trim();
+      const p2 = document.getElementById('cfg-p2').value.trim();
+      const p3 = document.getElementById('cfg-p3').value.trim();
+      const toastSec = parseInt(document.getElementById('cfg-toast-seconds').value) || 30;
+      const toastEn = document.getElementById('cfg-toast-enable').value === "true";
+
+      // Cập nhật Slogan, Phone, Address, Giá
+      document.querySelectorAll('.store-slogan').forEach(el => el.textContent = slogan);
+      document.querySelectorAll('.store-phone').forEach(el => el.textContent = phone);
+      document.querySelectorAll('.store-phone-link').forEach(el => el.setAttribute('href', 'tel:' + phone));
+      document.querySelectorAll('.store-zalo-link').forEach(el => el.setAttribute('href', 'https://zalo.me/' + phone));
+      document.querySelectorAll('.store-address').forEach(el => el.textContent = address);
+
+      const p1Target = document.querySelector('[data-key="c1-price"]');
+      if (p1Target) p1Target.textContent = p1;
+      const p2Target = document.querySelector('[data-key="c2-price"]');
+      if (p2Target) p2Target.textContent = p2;
+      const p3Target = document.querySelector('[data-key="c3-price"]');
+      if (p3Target) p3Target.textContent = p3;
+
+      const heroImg = document.getElementById('hero-main-img');
+      if (heroImg && heroImgUrl) heroImg.setAttribute('src', heroImgUrl);
+
+      // Cập nhật cấu hình Toast 30s
+      toastIntervalTime = toastSec * 1000;
+      isToastEnabled = toastEn;
+      startToastInterval();
+
+      closeSettingsModal();
+      saveChanges();
+      showAdminToast('✅ Đã cập nhật nhanh toàn bộ thông tin & chu kỳ thông báo 30s!');
+    }
+
+    // ===================================================================
+    // 6. TOAST THÔNG BÁO CHO QUẢN TRỊ VIÊN
+    // ===================================================================
+    function showAdminToast(msg) {
+      let toast = document.getElementById('admin-toast');
+      if (!toast) {
+        toast = document.createElement('div');
+        toast.id = 'admin-toast';
+        toast.className = 'fixed top-14 right-4 z-50 bg-charcoal-900 text-white border-2 border-gold-400 px-4 py-3 rounded-2xl shadow-2xl text-xs max-w-sm transition-all duration-300 transform translate-y-[-20px] opacity-0 flex items-center space-x-2';
+        document.body.appendChild(toast);
+      }
+      toast.innerHTML = `<i class="fa-solid fa-circle-check text-gold-400 text-base"></i> <span>${msg}</span>`;
+      toast.classList.remove('translate-y-[-20px]', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-[-20px]', 'opacity-0');
+      }, 3500);
+    }
+
+    // ===================================================================
+    // 7. CÁC TÍNH NĂNG TƯƠNG TÁC GIAO DIỆN (CHỌN SIZE, LỌC TAB, ĐẾM NGƯỢC)
+    // ===================================================================
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (mobileBtn && mobileMenu) {
+      mobileBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+      mobileMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => mobileMenu.classList.add('hidden')));
+    }
+
+    // Countdown Timer
+    let countdownHours = 3, countdownMinutes = 45, countdownSeconds = 20, countdownMillis = 88;
+    const elHours = document.getElementById('hours');
+    const elMinutes = document.getElementById('minutes');
+    const elSeconds = document.getElementById('seconds');
+    const elMillis = document.getElementById('millis');
+
+    setInterval(() => {
+      countdownMillis -= 8;
+      if (countdownMillis <= 0) {
+        countdownMillis = 99;
+        countdownSeconds--;
+        if (countdownSeconds < 0) {
+          countdownSeconds = 59;
+          countdownMinutes--;
+          if (countdownMinutes < 0) {
+            countdownMinutes = 59;
+            countdownHours--;
+            if (countdownHours < 0) countdownHours = 3;
+          }
+        }
+      }
+      if (elHours) elHours.textContent = String(countdownHours).padStart(2, '0');
+      if (elMinutes) elMinutes.textContent = String(countdownMinutes).padStart(2, '0');
+      if (elSeconds) elSeconds.textContent = String(countdownSeconds).padStart(2, '0');
+      if (elMillis) elMillis.textContent = String(Math.floor(countdownMillis)).padStart(2, '0');
+    }, 70);
+
+    // Filter Product Categories
+    function filterCategory(category) {
+      const items = document.querySelectorAll('.product-item');
+      const tabs = document.querySelectorAll('.category-tab');
+
+      tabs.forEach(tab => {
+        tab.classList.remove('bg-burgundy-700', 'text-white');
+        tab.classList.add('bg-white', 'text-burgundy-900');
+      });
+
+      const activeTab = document.getElementById(`tab-${category}`);
+      if (activeTab) {
+        activeTab.classList.remove('bg-white', 'text-burgundy-900');
+        activeTab.classList.add('bg-burgundy-700', 'text-white');
+      }
+
+      items.forEach(item => {
+        if (category === 'all' || item.classList.contains(`category-${category}`)) {
+          item.style.display = 'flex';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+
+    // Select Package helper
+    function selectPackage(packageName) {
+      const selectEl = document.getElementById('selected-combo');
+      if (selectEl) selectEl.value = packageName;
+      const orderSec = document.getElementById('order-section');
+      if (orderSec) orderSec.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Order Submit Handler
+    function handleOrderSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('cust-name').value;
+      const form = document.getElementById('order-form');
+      const successMsg = document.getElementById('order-success-msg');
+      const namePlaceholder = document.getElementById('success-cust-name');
+
+      if (namePlaceholder) namePlaceholder.textContent = name;
+      if (form) form.classList.add('hidden');
+      if (successMsg) successMsg.classList.remove('hidden');
+
+      const slotsEl = document.getElementById('slots-left');
+      if (slotsEl) {
+        let current = parseInt(slotsEl.textContent) || 9;
+        if (current > 1) slotsEl.textContent = current - 1;
+      }
+    }
+
+    function resetOrderForm() {
+      const form = document.getElementById('order-form');
+      const successMsg = document.getElementById('order-success-msg');
+      if (form) {
+        form.reset();
+        form.classList.remove('hidden');
+      }
+      if (successMsg) successMsg.classList.add('hidden');
+    }
+
+    // Khởi chạy khi tải xong trang
+    document.addEventListener('DOMContentLoaded', () => {
+      loadSavedContent();
+      startToastInterval(); // Bắt đầu chu kỳ thông báo 30s người mua thật bên trái
+    });
+  </script>
+</body>
+</html>
